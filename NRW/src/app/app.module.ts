@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProgramListComponent } from './program-list/program-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
+import { MarqueeComponent } from './marquee/marquee.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CardComponent } from './card/card.component';
     FooterComponent,
     ProgramListComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    MarqueeComponent
   ],
   imports: [
     BrowserModule,
