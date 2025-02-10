@@ -12,7 +12,7 @@ import { CardComponent } from './card/card.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    ProgramListComponent
+    ProgramListComponent,
     NavbarComponent,
     CardComponent
   ],
