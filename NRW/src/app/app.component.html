@@ -1,1 +1,15 @@
-<app-footer></app-footer> 
+<app-navbar></app-navbar>
+
+<div class="flex justify-center">
+  <div class="container grid grid-cols-5 gap-4 p-4 mt-4">
+    <app-card
+      *ngFor="let card of cards"
+      [name]="card.name"
+      [role]="card.role"
+      [imageSrc]="card.imageSrc">
+    </app-card>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
