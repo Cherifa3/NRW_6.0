@@ -8,6 +8,7 @@ import { ProgramListComponent } from './program-list/program-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 import { MarqueeComponent } from './marquee/marquee.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MarqueeComponent } from './marquee/marquee.component';
     ProgramListComponent,
     NavbarComponent,
     CardComponent,
-    MarqueeComponent
+    MarqueeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
