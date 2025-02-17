@@ -1,15 +1,1 @@
-<app-navbar></app-navbar>
-<app-marquee></app-marquee>
-<div class="flex justify-center">
-  <div class="container grid grid-cols-5 gap-4 p-4 mt-4">
-    <app-card
-      *ngFor="let card of cards"
-      [name]="card.name"
-      [role]="card.role"
-      [imageSrc]="card.imageSrc">
-    </app-card>
-  </div>
-</div>
-<app-program-list></app-program-list>
-<app-footer></app-footer>
-
+<router-outlet></router-outlet>

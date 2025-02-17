@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 import { MarqueeComponent } from './marquee/marquee.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CountdownComponent } from './countdown/countdown.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { HomeComponent } from './pages/home/home.component';
     NavbarComponent,
     CardComponent,
     MarqueeComponent,
-    HomeComponent
+    HomeComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,

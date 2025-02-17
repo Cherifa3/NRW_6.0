@@ -1,0 +1,73 @@
+.custom-list {
+    list-style: none; /* Remove default list bullets */
+    padding-left: 1.5rem; /* Add some padding to align the custom icon */
+  }
+  
+  .custom-list li {
+    position: relative; /* Required for positioning the custom icon */
+    padding-left: 2rem; /* Space for the custom icon */
+  }
+  
+  .custom-list li::before {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute;
+    left: 0; /* Position the icon to the left of the list item */
+    top: 0.5rem; /* Adjust vertical alignment */
+    width: 1rem; /* Set the width of the icon */
+    height: 1rem; /* Set the height of the icon */
+    background-image: url('../../../assets/Fire.png'); /* Path to your custom icon */
+    background-size: contain; /* Ensure the icon fits within the specified dimensions */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+  }
+
+
+/* Ensure smooth scrolling */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+.scroll-hidden {
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+/* Custom gradient with transparency */
+/* Marquee Animation */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: 200%; /* Ensures smooth looping */
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  min-width: 100%;
+  gap: 2rem; /* Adds spacing between logos */
+}
+
+.marquee-group img {
+  height: 150px;
+  object-fit: contain;
+  max-width: 250px; /* Prevents logos from being too large */
+}
