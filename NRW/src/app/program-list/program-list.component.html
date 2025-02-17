@@ -1,25 +1,27 @@
-<div class="min-h-screen bg-[#E8C17E] p-8">
+<div class="min-h-screen p-8">
   <div class="max-w-2xl mx-auto">
-    <h1 class="text-3xl font-bold text-amber-900 mb-8 text-center">Event Schedule</h1>
+    <h1 class="text-l font-regular text-customRed mb-8 text-center font-integral" [innerHTML]="day"></h1>
 
     <div class="relative">
 
       <div 
-        class="absolute left-4 top-6 w-0.5 bg-[#4B1306]" 
-        [style.height]="lineHeight">
+         class="absolute left-3.5 top-1/2 transform -translate-y-1/2 w-0.5 bg-[#4B1306]"
+        [style.height]="lineHeight"
+        style="border-left: 4px solid #4B1306;">
       </div>
       <div class="space-y-6">
         <div *ngFor="let event of events" class="relative pl-12">
-          <div class="absolute left-0 w-8 h-8 bg-[#4B1306] rounded-full flex items-center justify-center">
-            <div class="w-4 h-4 bg-[#3E0F04] rounded-full"></div>
+          <div class="absolute left-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-[#4B1306] rounded-full flex items-center justify-center">
+            <div class="w-3 h-3 bg-[#3E0F04] rounded-full"></div>
           </div>
           <div 
-            class="bg-[#E8C17E] rounded-lg p-4 border-2 border-amber-900 shadow-md"
-            >
-            <div class="flex items-center text-amber-900 mb-2">
-              <span class="text-sm font-medium">{{ event.time }}</span>
+            class="rounded-lg p-4 border"
+            [style.borderColor]="'rgba(198, 31, 31, 0.14)'"
+            style="display: inline-block; width: auto;">
+            <div class="flex items-center text-customRed mb-2">
+              <span class="text-sm font-NeueMontreal">{{ event.time }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-amber-900">{{ event.title }}</h3>
+            <h3 class="text-lg font-NeueMontreal font-medium text-customRed">{{ event.title }}</h3>
           </div>
         </div>
       </div>
