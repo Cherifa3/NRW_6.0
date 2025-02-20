@@ -8,17 +8,17 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 export class HomeComponent {
   // List of speakers
   speakers = [
-    { name: 'Abu Ruqaya', role: 'Lead Chahweni-Club', imageSrc: '../../assets/test-pict.png' },
-    { name: 'John Doe', role: 'Software Engineer', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Jane Smith', role: 'Product Manager', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Alice Brown', role: 'UI Designer', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Bob White', role: 'DevOps Engineer', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Charlie Green', role: 'Marketing Lead', imageSrc: '../../assets/test-pict.png' },
-    { name: 'David Black', role: 'Backend Developer', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Emma Blue', role: 'Frontend Developer', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Frank Yellow', role: 'QA Engineer', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Grace Red', role: 'Scrum Master', imageSrc: '../../assets/test-pict.png' },
-    { name: 'Grace Red', role: 'Scrum Master', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Abu' , lastName: 'Ruqaya', role: 'Lead Chahweni-Club', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'John' , lastName: 'Doe', role: 'Software Engineer', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Jane' , lastName: ' Smith', role: 'Product Manager', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Alice' , lastName: ' Brown', role: 'UI Designer', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Bob' , lastName: ' White', role: 'DevOps Engineer', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Charlie' , lastName: ' Green', role: 'Marketing Lead', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'David' , lastName: ' Black', role: 'Backend Developer', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Emma' , lastName: ' Blue', role: 'Frontend Developer', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Frank' , lastName: ' Yellow', role: 'QA Engineer', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Grace' , lastName: ' Red', role: 'Scrum Master', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Grace' , lastName: ' Red', role: 'Scrum Master', imageSrc: '../../assets/test-pict.png' },
   ];
 
   // Reference to the speakers container for scrolling

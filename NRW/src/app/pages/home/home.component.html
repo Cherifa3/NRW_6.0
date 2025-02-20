@@ -1,7 +1,3 @@
-<div class="min-h-screen flex flex-col bg-cover bg-center" style="background-image: url('../../../assets/BACKGROUND.png');">
-    <!-- Navbar at the top -->
-    <app-navbar></app-navbar>
-
     <!-- Main Content (Centered) -->
     <div class="flex-1 flex flex-col justify-center items-center text-center px-6 mt-8">
         <h1 class="text-xl sm:text-2xl md:text-3xl font-integral uppercase text-customRed">
@@ -191,7 +187,8 @@
         >
           <app-card
             [imageSrc]="speaker.imageSrc"
-            [name]="speaker.name"
+            [firstName]="speaker.firstName"
+            [lastName]="speaker.lastName"
             [role]="speaker.role"
           ></app-card>
         </div>
@@ -366,7 +363,5 @@
 
 <!--sponsors-->
 
-    <!-- Footer (Always at Bottom) -->
-    <app-footer class="mt-auto"></app-footer>
-</div>
+
 
