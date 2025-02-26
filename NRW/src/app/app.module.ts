@@ -9,7 +9,8 @@ import { CardComponent } from './card/card.component';
 import { MarqueeComponent } from './marquee/marquee.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CountdownComponent } from './countdown/countdown.component';
-import { OcTeamComponent } from './pages/oc-team/oc-team.component'; 
+import { OcTeamComponent } from './pages/oc-team/oc-team.component';
+import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component'; 
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OcTeamComponent } from './pages/oc-team/oc-team.component';
     MarqueeComponent,
     HomeComponent,
     CountdownComponent,
-    OcTeamComponent 
+    OcTeamComponent,
+    ComingSoonComponent 
   ],
   imports: [
     BrowserModule,
