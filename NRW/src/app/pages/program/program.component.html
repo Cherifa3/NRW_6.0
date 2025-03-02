@@ -1,0 +1,50 @@
+<div class="hero text-customRed">
+  <div class="hero-content text-center mt-8">
+    <div class="max-w-full">
+      <!-- Headline -->
+      <h1 class="text-3xl font-bold font-integral font-weight-400">
+        OUR OFFICIAL PROGRAM
+      </h1>
+
+      <!-- Description (Split into Two Lines) -->
+      <p class="py-6 font-neue font-weight-300">
+        We are excited to present a dynamic lineup of sessions, workshops, challenges and networking<br/>
+        opportunities designed to inspire and educate professionals in the field of robotics.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Buttons for Days -->
+<div class="hero text-customRed">
+  <div class="hero-content text-center mb-8">
+    <div class="max-w-full">
+      <div class="flex gap-4 justify-center">
+        <button
+          *ngFor="let day of days"
+          (click)="selectDay(day.id)"
+          [ngClass]="{
+            'border border-customRed text-customRed hover:bg-customRed hover:text-[#CCB07B]': selectedDayId !== day.id,
+            'bg-customRed text-[#CCB07B]': selectedDayId === day.id
+          }"
+          class="px-6 py-2 rounded-lg transition duration-300"
+        >
+          {{ day.name }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Program List for Selected Day -->
+<div *ngIf="selectedProgram" class="hero text-customRed">
+  <div class="hero-content text-center mb-8">
+    <div class="max-w-full">
+      <app-program-list
+        [day]="selectedProgram.day"
+        [events]="selectedProgram.events"
+        [lineHeight]="selectedProgram.lineHeight"
+      ></app-program-list>
+    </div>
+  </div>
+</div>

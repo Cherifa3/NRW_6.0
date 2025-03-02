@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 interface TimelineEvent {
   time: string;
@@ -8,21 +8,21 @@ interface TimelineEvent {
 @Component({
   selector: 'app-program-list',
   templateUrl: './program-list.component.html', 
-  styleUrls: ['./program-list.component.scss'], 
+  styleUrls: ['./program-list.component.scss'],
 })
 export class ProgramListComponent {
-  lineHeight = 'calc(100% - 6rem)';  
+  @Input() day: string = ''; // Input for the day
+  @Input() events: TimelineEvent[] = []; // Input for the events
+  @Input() lineHeight: number = 1400; // Default line height with a fallback value
   
-  day: string = 'Sunday 30<sup>th</sup> of June 2024';
- 
+  // Add these properties and methods for hover functionality
+  hoveredIndex: number = -1;
 
-  events: TimelineEvent[] = [
-    { time: '09 : 00 - 12 : 00', title: 'Networking Session' },
-    { time: '12 : 00 - 14 : 00', title: 'Check-in' },
-    { time: '14 : 00 - 17 : 00', title: 'Exhibition & Job Fair' },
-    { time: '17 : 00 - 19 : 00', title: 'Opening Ceremony & Launching Competitions' },
-    { time: '19 : 00 - 20 : 30', title: 'Dinner' },
-    { time: '20 : 30 - 23 : 00', title: 'Ongoing Challenges: Mentoring Sessions and Technical requirements announcements' },
-    { time: '23 : 00 - 01 : 00', title: 'Side Activities' }
-  ];
+  setHoverState(index: number, isHovered: boolean): void {
+    this.hoveredIndex = isHovered ? index : -1;
+  }
+
+  isHovered(index: number): boolean {
+    return this.hoveredIndex === index;
+  }
 }
