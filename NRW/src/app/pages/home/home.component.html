@@ -1,4 +1,9 @@
 <!-- Navbar at the top -->
+ 
+<div class="min-h-screen flex flex-col bg-cover bg-center" 
+style="background-image: url('../../../assets/BACKGROUND.png');
+       background-repeat: repeat;
+       background-size: auto;">
 <app-navbar></app-navbar>
 
 <!-- Main Content (Centered) -->
@@ -104,7 +109,7 @@
       <div class="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
         <iframe
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/7NKku06T0wc"
+          src="../../../assets/nrwaftermovie.mp4"
           title="NRW 5.0 Aftermovie"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -186,26 +191,27 @@
     </div>
 
     <!-- Navigation Buttons & Explore More -->
-    <div class="relative mt-1 flex items-center justify-center">
-      <!-- Centered Navigation Buttons -->
-      <div class="flex">
-        <button
-          class="p-2 rounded-full  bg-customRed hover:bg-gray-100 transition duration-300 z-10 mx-2"
-          (click)="scrollLeft()"
-        >
-        &lt; <!-- Left Arrow -->
-        </button>
-        <button
-          class="p-2 rounded-full  bg-customRed hover:bg-gray-100 transition duration-300 z-10 mx-2"
-          (click)="scrollRight()"
-        >
-          &gt; <!-- Right Arrow -->
-        </button>
-      </div>
+<div class="relative mt-1 flex items-center justify-center">
+  <!-- Centered Navigation Buttons -->
+  <div class="flex">
+    <button
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-gray-100 transition duration-300 z-10 mx-2"
+      (click)="scrollLeft()"
+    >
+      &lt; <!-- Left Arrow -->
+    </button>
+    <button
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-gray-100 transition duration-300 z-10 mx-2"
+      (click)="scrollRight()"
+    >
+      &gt; <!-- Right Arrow -->
+    </button>
+  </div>
 
-      <!-- Explore More aligned to the right -->
-      <a href="#" class="absolute right-0 text-lg text-customRed hover:underline font-neue">Explore more ></a>
-    </div>
+  <!-- Explore More aligned to the right -->
+  <a href="#" class="absolute right-0 text-lg text-customRed hover:underline font-neue">Explore more &gt;</a>
+</div>
+
   </div>
 </section>
 
@@ -353,3 +359,4 @@
 
 <!-- Footer (Always at Bottom) -->
 <app-footer></app-footer>
+</div>

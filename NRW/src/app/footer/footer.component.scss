@@ -1,5 +1,5 @@
 footer {
-    background-image: url('../../assets/footerbg.png');
+   
     font-family: 'NeueMontreal', sans-serif;
     font-weight: 290; 
     font-size: 15px;
@@ -7,6 +7,4 @@ footer {
     letter-spacing: 1px;
 }
 /* Footer Component CSS */
-:host-context(.no-bg-footer) footer {
-    background-color: transparent !important;
-  }
+

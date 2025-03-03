@@ -1,25 +1,42 @@
-<nav class="navbar flex items-center justify-center px-4 py-2 text-customRed my-4"> 
-    <!-- Bordered Container -->
-    <div class="flex items-center w-11/12 max-w-4xl justify-between px-4 ">
-      <!-- Logo Section -->
-      <div class="navbar-brand flex items-center">
-        <img src="../../assets/LOGO-NRW.png" alt="Logo" class="w-[65px] h-[62.5px] mr-4">
-      </div>
-  
-      <!-- Navigation Links -->
-      <ul class="navbar-links flex space-x-6">
-        <li class="navbar-item"><a href="" class="navbar-link">Home</a></li>
-        <li class="navbar-item"><a href="#what-is-nrw" class="navbar-link">About us</a></li>
-        <li class="navbar-item"><a href="program" class="navbar-link">Program</a></li>
-        <li class="navbar-item"><a href="coming-soon" class="navbar-link">Technical Challenges</a></li>
-        <li class="navbar-item"><a href="oc-team" class="navbar-link">OC team</a></li>
-        <li class="navbar-item"><a href="forum" class="navbar-link">Forum</a></li>
-      </ul>
-  
-      <!-- Contact Button -->
-      <a href="mailto:nrwcongress@gmail.com" class="bg-customRed text-[#D8C59F] w-[125px] h-[42px] rounded-[32px] flex items-center justify-center hover:bg-blue-600">
-        Contact us
-    </a>    
+<nav class="navbar flex items-center justify-center px-4 py-2 text-customRed my-4 bg-transparent">
+  <!-- Bordered Container -->
+  <div class="flex items-center w-11/12 max-w-4xl justify-between px-4">
+    <!-- Logo Section -->
+    <div class="navbar-brand flex items-center">
+      <!-- Default Logo -->
+      <img *ngIf="!isSpecifiedRoute()" src="../../assets/LOGO-NRW.png" alt="Logo" class="w-[65px] h-[62.5px] mr-4">
+      
+      <!-- Alternate Logo for Specified Route -->
+      <img *ngIf="isSpecifiedRoute()" src="../../assets/LOGO NRW LIGHT.png" alt="Alternate Logo" class="w-[65px] h-[62.5px] mr-4">
     </div>
-  </nav>
-  
+
+    <!-- Navigation Links -->
+    <ul class="navbar-links flex space-x-6">
+      <li class="navbar-item">
+        <a href="" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#what-is-nrw" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">About us</a>
+      </li>
+      <li class="navbar-item">
+        <a href="program" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Program</a>
+      </li>
+      <li class="navbar-item">
+        <a href="coming-soon" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Technical Challenges</a>
+      </li>
+      <li class="navbar-item">
+        <a href="oc-team" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">OC team</a>
+      </li>
+      <li class="navbar-item">
+        <a href="forum" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Forum</a>
+      </li>
+    </ul>
+
+    <!-- Contact Button -->
+    <a href="mailto:nrwcongress@gmail.com" 
+       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] hover:bg-blue-600"
+       [ngClass]="{'bg-customLight text-customRed': isSpecifiedRoute(), 'bg-customRed text-[#D8C59F]': !isSpecifiedRoute()}">
+      Contact us
+    </a>
+  </div>
+</nav>

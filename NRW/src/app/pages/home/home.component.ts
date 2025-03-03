@@ -8,17 +8,14 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 export class HomeComponent {
   // List of speakers
   speakers = [
-    { firstName: 'Abu' , lastName: 'Ruqaya', role: 'Lead Chahweni-Club', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'John' , lastName: 'Doe', role: 'Software Engineer', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Jane' , lastName: ' Smith', role: 'Product Manager', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Alice' , lastName: ' Brown', role: 'UI Designer', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Bob' , lastName: ' White', role: 'DevOps Engineer', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Charlie' , lastName: ' Green', role: 'Marketing Lead', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'David' , lastName: ' Black', role: 'Backend Developer', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Emma' , lastName: ' Blue', role: 'Frontend Developer', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Frank' , lastName: ' Yellow', role: 'QA Engineer', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Grace' , lastName: ' Red', role: 'Scrum Master', imageSrc: '../../assets/test-pict.png' },
-    { firstName: 'Grace' , lastName: ' Red', role: 'Scrum Master', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'JIM' , lastName: 'SCHMIEDELER', role: 'Professor at University of Notre Dame', imageSrc: '../../assets/James Schmiedeler.png' },
+    { firstName: 'ANIS' , lastName: 'KOUBAA', role: 'Director of Robotics and Internet of Things Unit at Prince Sultan University Founder of ROS Community in Tunisia', imageSrc: '../../assets/anis-koubaa.png' },
+    { firstName: 'OUSSEMA' , lastName: 'CHELLY', role: 'ML Cloud Solution ArchitectAWS Cloud Solution ArchitectMicrosoft AI & IoT Lab EMEA', imageSrc: '../../assets/oussema-chelli.png' },
+    { firstName: 'CRISTINIAOLAVERRI' , lastName: 'MONREAL', role: 'full professor and head of the Department Intelligent Transport Systems at the Johannes Kepler University Linz, in Austria.', imageSrc: '../../assets/Dr. CristinaOlaverri.png' },
+    { firstName: 'OUSSEMA' , lastName: 'KHATIB', role: ' Professor of Computer Science and the Director of the Robotics Laboratory at Stanford UniversityPresident of the International Foundation of Robotics Research (IFRR) and an IEEE Fellow', imageSrc: '../../assets/Khatib-Oussama.png' },
+    { firstName: 'ANIS' , lastName: 'SAHBANI', role: 'Associate Professor at Sorbonne University - CEO & Founder of Enova Robotics S.A.', imageSrc: '../../assets/anis_sahbani.png' },
+    { firstName: 'FIRAS' , lastName: 'BEN HASSEN', role: 'Deputy Head of Data Science Services MentorEntrepreneur (Data, Data and Data)', imageSrc: '../../assets/firas-ben-hassen.png' },
+   
   ];
 
   // Reference to the speakers container for scrolling
