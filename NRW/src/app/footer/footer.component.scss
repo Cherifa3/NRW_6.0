@@ -6,3 +6,7 @@ footer {
     line-height: 24px;
     letter-spacing: 1px;
 }
+/* Footer Component CSS */
+:host-context(.no-bg-footer) footer {
+    background-color: transparent !important;
+  }

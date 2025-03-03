@@ -12,7 +12,10 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { OcTeamComponent } from './pages/oc-team/oc-team.component';
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { ProgramComponent } from './pages/program/program.component';
-import { ChatbotComponent } from './chatbot-circle/chatbot-circle.component'; 
+import { ChatbotComponent } from './chatbot-circle/chatbot-circle.component';
+import { ForumComponent } from './pages/forum/forum.component'; 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavbarWhiteComponent } from './navbar-white/navbar-white.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +30,14 @@ import { ChatbotComponent } from './chatbot-circle/chatbot-circle.component';
     OcTeamComponent,
     ComingSoonComponent ,
     ProgramComponent,
-    ChatbotComponent
+    ChatbotComponent,
+    ForumComponent,
+    NavbarWhiteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     provideClientHydration()
