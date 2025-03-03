@@ -11,7 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { OcTeamComponent } from './pages/oc-team/oc-team.component';
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
-import { ProgramComponent } from './pages/program/program.component'; 
+import { ProgramComponent } from './pages/program/program.component';
+import { ChatbotComponent } from './chatbot-circle/chatbot-circle.component'; 
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProgramComponent } from './pages/program/program.component';
     CountdownComponent,
     OcTeamComponent,
     ComingSoonComponent ,
-    ProgramComponent
+    ProgramComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
