@@ -1,0 +1,12 @@
+/* Apply background to the entire page */
+:host {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    background-image: url('../../../assets/dark-background.png'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; /* Prevent the image from repeating */
+  }
+  

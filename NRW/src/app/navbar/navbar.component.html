@@ -16,16 +16,16 @@
         <a href="" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Home</a>
       </li>
       <li class="navbar-item">
-        <a href="#what-is-nrw" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">About us</a>
-      </li>
-      <li class="navbar-item">
         <a href="program" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Program</a>
       </li>
       <li class="navbar-item">
-        <a href="coming-soon" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Technical Challenges</a>
+        <a href="Technical-challenges" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Technical Challenges</a>
       </li>
       <li class="navbar-item">
         <a href="oc-team" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">OC team</a>
+      </li>
+      <li class="navbar-item">
+        <a href="speakers" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Speakers</a>
       </li>
       <li class="navbar-item">
         <a href="forum" class="navbar-link" [ngClass]="{'text-customLight': isSpecifiedRoute()}">Forum</a>
@@ -34,7 +34,7 @@
 
     <!-- Contact Button -->
     <a href="mailto:nrwcongress@gmail.com" 
-       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] hover:bg-blue-600"
+       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px]  hover:bg-customYellow hover:border hover:border-customRed hover:text-customRed transition-all duration-300"
        [ngClass]="{'bg-customLight text-customRed': isSpecifiedRoute(), 'bg-customRed text-[#D8C59F]': !isSpecifiedRoute()}">
       Contact us
     </a>

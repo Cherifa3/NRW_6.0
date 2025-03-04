@@ -16,6 +16,8 @@ import { ChatbotComponent } from './chatbot-circle/chatbot-circle.component';
 import { ForumComponent } from './pages/forum/forum.component'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarWhiteComponent } from './navbar-white/navbar-white.component';
+import { SpeakersComponent } from './pages/speakers/speakers.component';
+import { SpeakerComponent } from './speaker/speaker.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { NavbarWhiteComponent } from './navbar-white/navbar-white.component';
     ProgramComponent,
     ChatbotComponent,
     ForumComponent,
-    NavbarWhiteComponent
+    NavbarWhiteComponent,
+    SpeakersComponent,
+    SpeakerComponent
   ],
   imports: [
     BrowserModule,

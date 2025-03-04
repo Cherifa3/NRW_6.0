@@ -1,0 +1,12 @@
+<div class="profile-card">
+    <div class="profile-content">
+      <div class="image-container">
+        <img [src]="imageSrc" alt="{{firstName}}" class="profile-image" />
+      </div>
+      <div class="profile-details">
+        <span class="first-name">{{firstName}} </span><span class="last-name">{{lastName}}</span>
+        <h4 class="role" [innerHTML]="role"></h4> 
+        <a [href]="linkedinLink" class="linkedin-link">LinkedIn</a>
+      </div>
+    </div>
+  </div>
