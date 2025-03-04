@@ -1,3 +1,13 @@
+/* Background container */
+.background-container {
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  min-height: 80vh; /* Ensures the container takes at least 80% of the viewport height */
+  display: flex;
+  flex-direction: column; /* Stacks children vertically (navbar on top, content below) */
+  padding: 20px; /* Adds some padding around the content */
+}
+
 .custom-list {
     list-style: none; /* Remove default list bullets */
     padding-left: 1.5rem; /* Add some padding to align the custom icon */

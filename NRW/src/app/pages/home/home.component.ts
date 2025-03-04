@@ -6,6 +6,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./home.component.scss'], // Replace with your home component's styles
 })
 export class HomeComponent {
+
   // List of speakers
   speakers = [
     { firstName: 'JIM' , lastName: 'SCHMIEDELER', role: 'Professor at University of Notre Dame', imageSrc: '../../assets/James Schmiedeler.png' },

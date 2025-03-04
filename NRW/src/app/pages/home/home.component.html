@@ -1,37 +1,36 @@
-<!-- Navbar at the top -->
+
  
-<div class="min-h-screen flex flex-col bg-cover bg-center" 
-style="background-image: url('../../../assets/BACKGROUND.png');
-       background-repeat: repeat;
-       background-size: auto;">
+<div class="background-container" [ngStyle]="{'background-image': 'url(../../../assets/header-home.png)'}">
+  <!-- Navbar at the top -->
 <app-navbar></app-navbar>
 
 <!-- Main Content (Centered) -->
-    <div class="flex-1 flex flex-col justify-center items-center text-center px-6 mt-8">
-        <h1 class="text-xl sm:text-2xl md:text-3xl font-integral uppercase text-customRed">
+    <div class="flex-1 flex flex-col justify-center items-center text-center px-6 mt-2">
+        <h1 class="sm:text-xl md:text-3xl font-integral uppercase text-customRed">
             Welcome to the first
         </h1>
-        <h2 class="text-2xl sm:text-4xl md:text-5xl font-integral uppercase text-customRed">
-            Tunisian National Robotics Congress
-        </h2>
+        <h2 class="sm:text-xl md:text-5xl font-integral font-medium uppercase text-customRed">
+          Tunisian National Robotics Congress
+        </h2>        
 
-        <p class="max-w-2xl text-sm sm:text-base text-customRed font-neue mt-4">
-            Welcome to the official website of National Robotics Weekend, dive deeper into the details of our congress and 
-            don't hesitate to join us for an exceptional journey.
+        <p class="max-w-2xl text-sm sm:text-base text-customRed font-neue font-light mt-8">
+          Welcome to the official website of National Robotics Weekend, dive deeper into the details of our congress and 
+          don't hesitate to join us for an exceptional journey.
         </p>
+        
     </div>
     <!-- counter-->
     <!-- counter-->
 
     <div class="flex items-center justify-center space-x-4 mt-4 mb-4">
-        <p class="text-customRed font-neue">Learn more</p>
-        <button class=" font-neue bg-customRed text-customYellow px-4 py-2 rounded hover:bg-customRed-dark hover:text-customYellow-light transition duration-300">
-          Pre register now ->
-        </button>
-      </div>
-
+      <p class="text-customRed font-neue font-light">Learn more</p>
+      <button class="font-neue font-light bg-customRed text-[#D8C59F] px-8 py-2 rounded hover:bg-customRed-dark hover:text-customYellow-light transition duration-300 whitespace-nowrap ml-8 transform hover:scale-105">
+        Pre register now
+        <img src="../../../assets/Icon.png" alt="Arrow Icon" class="w-2 h-1 ml-2 inline-block" />
+      </button>
+    </div>
     <!--buttons-->
-
+</div>
     <app-marquee></app-marquee>
         <!--what is nrw-->
         <section id="what-is-nrw" class="py-16 px-8 ">
@@ -44,8 +43,8 @@ style="background-image: url('../../../assets/BACKGROUND.png');
               <!-- Text on the right -->
               <div class="w-1/2">
                 <h1 class="text-4xl font-integral text-customRed mb-6">WHAT IS <b>NRW?</b></h1>
-                <p class="text-lg text-customRed leading-relaxed font-neue">
-                  National Robotics Weekend (NRW), organized by IEEE RAS INSAT, is Tunisia’s exclusive robotics congress, held annually in June in Tunis. Attracting around 350 students, NRW is a unique event that provides a dynamic platform for Tunisia’s future engineers. Participants have the choice to either compete in various challenges and competitions or enrich their knowledge through state-of-the-art workshops and enlightening keynotes. The event is dedicated to uniting the robotics community, nurturing new connections, inspiring innovation, and enhancing technological skills across diverse fields.
+                <p class="text-lg text-customRed leading-relaxed font-neue font-light">
+                  <span class="font-normal">National Robotics Weekend (NRW)</span>, organized by IEEE RAS INSAT, is Tunisia’s exclusive robotics congress, held annually in June in Tunis. Attracting around 350 students, NRW is a unique event that provides a dynamic platform for Tunisia’s future engineers. Participants have the choice to either compete in various challenges and competitions or enrich their knowledge through state-of-the-art workshops and enlightening keynotes. The event is dedicated to uniting the robotics community, nurturing new connections, inspiring innovation, and enhancing technological skills across diverse fields.
                 </p>
               </div>
             </div>
@@ -55,28 +54,28 @@ style="background-image: url('../../../assets/BACKGROUND.png');
 
 <!--last editions-->
 
-<div class="flex-1 flex flex-col justify-center items-center text-center px-6 mt-8">
-    <h1 class="text-2xl sm:text-4xl md:text-5xl font-integral uppercase text-customRed">
+<div class="flex-1 flex flex-col justify-center items-center text-center mt-16">
+    <h1 class="sm:text-4xl md:text-4xl font-integral uppercase text-customRed mb-2">
        OUR LAST EDITION <B>IN NUMBERS</B>
     </h1>
-    <h2 class="text-xl sm:text-2xl md:text-3xl font-integral uppercase text-customRed">
-        NRW5.0
+    <h2 class="sm:text-xl md:text-xl font-integral uppercase text-customRed">
+        NRW 6.0
     </h2>
 
-    <section class="py-16 px-8 mt-1">
-        <div class="max-w-6xl mx-auto text-center border border-customRed rounded-2xl border-opacity-25">
+    <section class="py-8 pb-16">
+        <div class="max-w-6xl mx-auto text-center border border-customRed rounded-2xl border-opacity-25 px-8">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             
             <div class="p-6">
               <img src="../../../assets/speaker1.png" alt="Conferences" class="w-16 h-16 mx-auto mb-4">
-              <p class="text-4xl font-bold text-customRed">4</p>  
+              <p class="text-4xl font-bold text-customRed">7</p>  
               <h2 class="text-2xl font-bold text-customRed mb-2">CONFERENCES</h2>
             </div>
       
             
             <div class="p-6">
               <img src="../../../assets/building1.png" alt="Companies" class="w-16 h-16 mx-auto mb-4">
-              <p class="text-4xl font-bold text-customRed">8</p>  
+              <p class="text-4xl font-bold text-customRed">12</p>  
               <h2 class="text-2xl font-bold text-customRed mb-2">COMPANIES</h2>
             </div>
       
@@ -98,25 +97,29 @@ style="background-image: url('../../../assets/BACKGROUND.png');
       </section>
 <!--last editions-->
 <!--video-->
-<section class="py-16 px-8 bg-customRed rounded-xl">
-    <div class="w-full max-w-[1400px] mx-auto text-center rounded-xl"> <!-- Custom width -->
-      <!-- Heading -->
-      <h2 class="text-2xl font-integral text-customYellow mb-8">
-        WATCH THE AFTERMOVIE OF NRW 5.0
-      </h2>
-  
-      <!-- Video Container -->
-      <div class="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
-        <iframe
-          class="absolute top-0 left-0 w-full h-full"
-          src="../../../assets/nrwaftermovie.mp4"
-          title="NRW 5.0 Aftermovie"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </section>
+<section class="py-16 px-16 bg-[#280A03] rounded-3xl my-16 w-[80%]">
+  <div class="w-full text-center rounded-xl">
+    <!-- Heading -->
+    <h2 class="text-3xl font-integral text-customYellow mb-8">
+      WATCH <b> THE AFTER MOVIE </b> OF NRW 6.0
+    </h2>
+    
+
+    <!-- Video Container -->
+<div class="relative w-full h-0 pb-[50%] rounded-3xl overflow-hidden shadow-lg border-[#DDBB81]"  style="border-width: 3px;">
+  <iframe
+    class="absolute top-0 left-0 w-full h-full"
+    src="../../../assets/nrwaftermovie.mp4"
+    title="NRW 5.0 Aftermovie"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+
+  </div>
+</section>
+
+
   <!--video-->
 
 <!--what is iee-->
@@ -124,9 +127,9 @@ style="background-image: url('../../../assets/BACKGROUND.png');
   <div class="max-w-6xl mx-auto flex text-left space-x-12">
     <!-- Text on the left -->
     <div class="w-1/2">
-      <h1 class="text-4xl font-neue text-customRed mb-4">WHAT IS <b>IEE RAS INSAT?</b></h1> <!-- Reduced margin-bottom from mb-6 to mb-4 -->
-      <p class="text-lg text-customRed leading-relaxed font-neue">
-        IEEE RAS INSAT SBC, the Robotics and Automation Society Student Branch Chapter, serves as the organizing unit for the national robotics weekend. It's one of the largest and most dynamic chapters within IEEE, its primary objective is to foster innovation and advance research in the fields of robotics and automation.
+      <h1 class="text-4xl font-integral text-customRed mb-4">WHAT IS <b>IEE RAS INSAT?</b></h1> <!-- Reduced margin-bottom from mb-6 to mb-4 -->
+      <p class="text-md text-customRed leading-relaxed font-neue font-light">
+        <b>IEEE RAS INSAT SBC,</b> the Robotics and Automation Society Student Branch Chapter, serves as the organizing unit for the national robotics weekend. It's one of the largest and most dynamic chapters within IEEE, its primary objective is to foster innovation and advance research in the fields of robotics and automation.
         With a membership exceeding 200 individuals, it consistently delivers engaging activities and initiatives in order to cultivate interest and expertise in these fields.
       </p>
     </div>
@@ -140,23 +143,23 @@ style="background-image: url('../../../assets/BACKGROUND.png');
 
 <section class="py-4 px-8 text-left">
   <div class="max-w-6xl mx-auto">
-    <p class="text-lg text-customRed mb-2 font-neue">
-      <b>It is one of the most active Student Branch Chapter in Tunisia Playing a vital role at INSAT ecosystem by:</b>
+    <p class="text-lg text-customRed mb-2 font-neue font-normal">
+      It is one of the most active Student Branch Chapter in Tunisia Playing a vital role at INSAT ecosystem by:
     </p>
-    <ul class="custom-list space-y-1 mb-2"> <!-- Removed list-disc and added custom-list -->
-      <li class="text-lg text-customRed font-neue">
-        Organizing The ONLY robotics congress in Tunisia: <span class="font-bold">National Robotics Weekend</span>
+    <ul class="custom-list space-y-2 mb-2"> <!-- Removed list-disc and added custom-list -->
+      <li class="text-md text-customRed font-neue font-light">
+        Organizing The ONLY robotics congress in Tunisia: <b>National Robotics Weekend</b >
       </li>
-      <li class="text-lg text-customRed font-neue">
+      <li class="text-md text-customRed font-neue font-light">
         Representing Tunisia Yearly in <b>EUROBOT</b> since 2022
       </li>
-      <li class="text-lg text-customRed font-neue">
+      <li class="text-md text-customRed font-neue font-light">
         Organizing <b>RAS ODYSSEY:</b> a Program to Teach 100 students embedded systems, robotics and AI in 5 Sessions for each domain.
       </li>
-      <li class="text-lg text-customRed font-neue">
+      <li class="text-md text-customRed font-neue font-light">
         Organizing <b>InnoWeek:</b> A week of intensive learning and innovation in embedded systems, culminating in a spirited showcase of skills at INSAT. (2024)
       </li>
-      <li class="text-lg text-customRed font-neue">
+      <li class="text-md text-customRed font-neue font-light">
         Arranging <b>“RoboCraft”</b> was a successful series where participants built autonomous robots, with attending the Esprit Ras Robots competition.
       </li>
     </ul>

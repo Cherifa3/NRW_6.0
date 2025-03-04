@@ -7,7 +7,7 @@
       <img *ngIf="!isSpecifiedRoute()" src="../../assets/LOGO-NRW.png" alt="Logo" class="w-[65px] h-[62.5px] mr-4">
       
       <!-- Alternate Logo for Specified Route -->
-      <img *ngIf="isSpecifiedRoute()" src="../../assets/LOGO NRW LIGHT.png" alt="Alternate Logo" class="w-[65px] h-[62.5px] mr-4">
+      <img *ngIf="isSpecifiedRoute()" src="../../assets/LOGO-NRW-LIGHT.png" alt="Alternate Logo" class="w-[65px] h-[62.5px] mr-4">
     </div>
 
     <!-- Navigation Links -->
@@ -33,10 +33,14 @@
     </ul>
 
     <!-- Contact Button -->
-    <a href="mailto:nrwcongress@gmail.com" 
-       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px]  hover:bg-customYellow hover:border hover:border-customRed hover:text-customRed transition-all duration-300"
-       [ngClass]="{'bg-customLight text-customRed': isSpecifiedRoute(), 'bg-customRed text-[#D8C59F]': !isSpecifiedRoute()}">
+      <a href="mailto:nrwcongress@gmail.com"
+      class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] transition-all duration-300 hover:font-bold hover:border"
+      [ngClass]="{
+        'bg-customLight text-customRed hover:bg-[#1D150F] hover:text-customLight hover:border-customLight': isSpecifiedRoute(), 
+        'bg-customRed text-[#D8C59F] hover:bg-[#C7AE7E] hover:text-customRed hover:border-customRed': !isSpecifiedRoute()
+      }">
       Contact us
-    </a>
+      </a>
+
   </div>
 </nav>
