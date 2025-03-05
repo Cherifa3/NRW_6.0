@@ -11,7 +11,20 @@ export class NavbarComponent {
 
   // Function to check if the current route is the specified route
   isSpecifiedRoute(): boolean {
-    const specifiedRoutes = ['/forum', '/speakers']; // Add your routes here
-    return specifiedRoutes.includes(this.router.url);
+    const specifiedRoutes = ['/', '/program', '/Technical-challenges', '/oc-team', '/forum', '/speakers'];
+    return specifiedRoutes.includes(this.stripTrailingSlash(this.router.url));
+  }
+
+  // Function to check if the current route matches the link's route
+  isActiveRoute(route: string): boolean {
+    // Special case for the home route ('/'), handle it without trailing slash
+    const currentUrl = this.stripTrailingSlash(this.router.url);
+    const targetUrl = this.stripTrailingSlash(route);
+    return currentUrl === targetUrl || (route === '/' && currentUrl === '/');
+  }
+
+  // Helper function to strip trailing slashes from the route
+  private stripTrailingSlash(url: string): string {
+    return url.endsWith('/') ? url.slice(0, -1) : url;
   }
 }
