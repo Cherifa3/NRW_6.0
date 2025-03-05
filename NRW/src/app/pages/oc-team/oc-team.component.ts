@@ -32,8 +32,13 @@ export class OcTeamComponent {
     { firstName: 'Mohammed Youssef' , lastName: ' Laabidi', role: 'organization ', imageSrc: '../../assets/mohamed-youssef-laabidi.jpg' },
     { firstName: 'Ichraf' , lastName: ' Besbes', role: 'organization ', imageSrc: '../../assets/ichraf-besbes.jpg' },
     { firstName: 'Ghada' , lastName: ' Bouabidi', role: 'Branding ', imageSrc: '../../assets/ghada-bouabidi.jpg' },
+    { firstName: 'mohamed amine' , lastName: 'ahmadi', role: 'IT', imageSrc: '../../assets/ahmadi-mohamed-amine.jpg' },
+    { firstName: 'Mlake' , lastName: 'hamzaoui', role: 'Branding', imageSrc: '../../assets/malek-hamzaoui.jpg' },
     { firstName: 'Youssef' , lastName: 'Guiga', role: 'IT', imageSrc: '../../assets/youssef-guiga.jpg' },
     { firstName: 'Skander' , lastName: 'Gritli', role: 'IT', imageSrc: '../../assets/skander-gritli.jpg' },
+    { firstName: 'Fares' , lastName: ' Atoui', role: 'TECHNICAL ', imageSrc: '../../assets/fares-atoui.jpg' },
+    { firstName: 'Chahd' , lastName: 'Jedidi', role: 'TECHNICAL', imageSrc: '../../assets/test-pict.png' },
+    { firstName: 'Fedy' , lastName: 'Ben Hassouna', role: 'TECHNICAL', imageSrc: '../../assets/fedy-benhassouna.jpg' },
 
   ];
 }
