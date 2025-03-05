@@ -4,12 +4,12 @@
   <div class="hero-content text-center mt-8">
     <div class="max-w-full">
       <!-- Headline -->
-      <h1 class="text-3xl font-bold font-integral font-weight-400">
-        OUR OFFICIAL PROGRAM
-      </h1>
+      <h1 class="text-3xl font-bold mt-8" style="font-family: 'Integral CF'; font-weight: 400;">
+        OUR OFFICIAL <span style="font-weight: 800;">PROGRAM</span>
+    </h1>
 
       <!-- Description (Split into Two Lines) -->
-      <p class="py-6 font-neue font-weight-300">
+      <p class="py-4 font-neue font-light">
         We are excited to present a dynamic lineup of sessions, workshops, challenges and networking<br/>
         opportunities designed to inspire and educate professionals in the field of robotics.
       </p>
@@ -26,10 +26,10 @@
           *ngFor="let day of days"
           (click)="selectDay(day.id)"
           [ngClass]="{
-            'border border-customRed text-customRed hover:bg-customRed hover:text-[#CCB07B]': selectedDayId !== day.id,
+            'border border-[#4B1306]/10 text-customRed hover:bg-customRed hover:text-[#CCB07B]': selectedDayId !== day.id,
             'bg-customRed text-[#CCB07B]': selectedDayId === day.id
           }"
-          class="px-6 py-2 rounded-lg transition duration-300"
+          class="px-6 py-2 rounded-3xl transition duration-300"
         >
           {{ day.name }}
         </button>

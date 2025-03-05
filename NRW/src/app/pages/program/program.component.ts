@@ -15,7 +15,7 @@ export class ProgramComponent {
   programs = [
     {
       id: 1,
-      lineHeight: 1080,
+      lineHeight: 720,
       day: 'Friday 28<sup>th</sup> of June 2024', // Day 1
       events: [
         { time: '09:00 - 12:00', title: 'Networking Session' },
@@ -30,7 +30,7 @@ export class ProgramComponent {
     {
       id: 2,
       day: 'Saturday 29<sup>th</sup> of June 2024', // Day 2
-      lineHeight: 1560,
+      lineHeight: 1120,
       events: [
         { time: '07:00 - 09:00', title: 'Breakfast' },
         { time: '09:00 - 10:45', title: '<strong>Keynote 1:</strong> Creating your AI Enabled Startup<br/><strong>Keynote 2:</strong> Continuous connectivity of the vehicular network for both road traffic fluidity and road safety' },
@@ -46,7 +46,7 @@ export class ProgramComponent {
     {
       id: 3,
       day: 'Sunday 30<sup>th</sup> of June 2024', // Day 3
-      lineHeight: 750,
+      lineHeight: 530,
       events: [
         { time: '07:00 - 09:00', title: 'Breakfast' },
         { time: '09:00 - 11:00', title: '<strong>Technical validation:</strong> Computer Vision Applied in Industry 4.0 + Embedded Competitive Programming Contest + Pre-selection + Pitching' },
