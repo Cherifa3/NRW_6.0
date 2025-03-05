@@ -10,5 +10,6 @@ export class CardComponent {
   @Input() firstName: string='';
   @Input() lastName: string='';
   @Input() role: string='';
+  @Input() roleClass: string = ''; // Add this line
 }
 

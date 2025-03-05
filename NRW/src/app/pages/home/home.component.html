@@ -126,8 +126,8 @@
 <section  class="py-8 px-8"> <!-- Reduced padding from py-16 to py-8 -->
   <div class="max-w-6xl mx-auto flex text-left space-x-12">
     <!-- Text on the left -->
-    <div class="w-1/2">
-      <h1 class="text-4xl font-integral text-customRed mb-4">WHAT IS <b>IEE RAS INSAT?</b></h1> <!-- Reduced margin-bottom from mb-6 to mb-4 -->
+    <div class="w-1/2 mt-8">
+      <h1 class="text-4xl font-integral text-customRed my-4">WHAT IS <b>IEE RAS INSAT?</b></h1> <!-- Reduced margin-bottom from mb-6 to mb-4 -->
       <p class="text-md text-customRed leading-relaxed font-neue font-light">
         <b>IEEE RAS INSAT SBC,</b> the Robotics and Automation Society Student Branch Chapter, serves as the organizing unit for the national robotics weekend. It's one of the largest and most dynamic chapters within IEEE, its primary objective is to foster innovation and advance research in the fields of robotics and automation.
         With a membership exceeding 200 individuals, it consistently delivers engaging activities and initiatives in order to cultivate interest and expertise in these fields.
@@ -136,105 +136,103 @@
 
     <!-- Image on the right -->
     <div class="w-1/2">
-      <img src="../../../assets/ras.png" alt="NRW Image" class="rounded-lg shadow-lg">
+      <img src="../../../assets/ras.png" alt="NRW Image" class="rounded-3xl shadow-lg image-80 m-auto">
     </div>
   </div>
 </section>
 
-<section class="py-4 px-8 text-left">
-  <div class="max-w-6xl mx-auto">
-    <p class="text-lg text-customRed mb-2 font-neue font-normal">
+<section class="py-4 text-left px-0 max-w-6xL">
+    <p class="text-lg text-customRed mb-2 font-neue font-normal" style="letter-spacing: 0.02em;">
       It is one of the most active Student Branch Chapter in Tunisia Playing a vital role at INSAT ecosystem by:
     </p>
     <ul class="custom-list space-y-2 mb-2"> <!-- Removed list-disc and added custom-list -->
-      <li class="text-md text-customRed font-neue font-light">
-        Organizing The ONLY robotics congress in Tunisia: <b>National Robotics Weekend</b >
+      <li class="text-md text-customRed font-neue font-light" style="letter-spacing: 0.02em;">
+        Organizing The ONLY robotics congress in Tunisia: <b>National Robotics Weekend</b>
       </li>
-      <li class="text-md text-customRed font-neue font-light">
+      <li class="text-md text-customRed font-neue font-light" style="letter-spacing: 0.02em;">
         Representing Tunisia Yearly in <b>EUROBOT</b> since 2022
       </li>
-      <li class="text-md text-customRed font-neue font-light">
-        Organizing <b>RAS ODYSSEY:</b> a Program to Teach 100 students embedded systems, robotics and AI in 5 Sessions for each domain.
+      <li class="text-md text-customRed font-neue font-light" style="letter-spacing: 0.02em;">
+        Organizing <b>RAS ODYSSEY:</b> a Program to Teach 100 students embedded systems, robotics and AI in 5 Sessions for each domain since 2024.
       </li>
-      <li class="text-md text-customRed font-neue font-light">
+      <li class="text-md text-customRed font-neue font-light" style="letter-spacing: 0.02em;">
         Organizing <b>InnoWeek:</b> A week of intensive learning and innovation in embedded systems, culminating in a spirited showcase of skills at INSAT. (2024)
       </li>
-      <li class="text-md text-customRed font-neue font-light">
+      <li class="text-md text-customRed font-neue font-light" style="letter-spacing: 0.02em;">
         Arranging <b>“RoboCraft”</b> was a successful series where participants built autonomous robots, with attending the Esprit Ras Robots competition.
       </li>
     </ul>
-    <div class="text-right"> <!-- Added a div with text-right to align the link to the right -->
-      <a href="https://insat.ieee.tn/" class="text-lg text-customRed hover:underline font-neue">Explore more ></a>
+    <div class="text-right mt-6"> <!-- Added a div with text-right to align the link to the right -->
+      <a href="https://insat.ieee.tn/" class="text-lg text-customRed hover:underline font-neue font-light" style="letter-spacing: 0.02em;">explore more &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
     </div>
-  </div>
 </section>  
 <!--what is iee-->  
 <!--speakers-->
 <!-- Speakers Section -->
-<section class="py-16 px-8">
+<section class="py-16 px-8 my-8">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-integral text-customRed mb-8">MEET OUR SPEAKERS</h2>
+    <h2 class="text-3xl font-integral text-customRed mb-8">MEET <span style="font-weight: 800;">OUR SPEAKERS</span></h2>
 
     <!-- Speaker Cards Carousel -->
     <div class="relative">
       <!-- Speaker Cards Container -->
-      <div class="overflow-x-auto scroll-smooth whitespace-nowrap scroll-hidden" #speakersContainer>
+      <div class="overflow-x-auto scroll-smooth whitespace-nowrap scroll-hidden  py-8 min-h-[350px]" #speakersContainer>
         <div
           *ngFor="let speaker of speakers"
-          class="inline-block w-72 mx-4"
+          class="inline-block mx-4 scale-125"
         >
           <app-card
             [imageSrc]="speaker.imageSrc"
             [firstName]="speaker.firstName"
             [lastName]="speaker.lastName"
             [role]="speaker.role"
+            [roleClass]="'text-xs'"
           ></app-card>
         </div>
       </div>
     </div>
 
     <!-- Navigation Buttons & Explore More -->
-<div class="relative mt-1 flex items-center justify-center">
-  <!-- Centered Navigation Buttons -->
-  <div class="flex">
-    <button
-      class="w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-gray-100 transition duration-300 z-10 mx-2"
-      (click)="scrollLeft()"
-    >
-      &lt; <!-- Left Arrow -->
-    </button>
-    <button
-      class="w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-gray-100 transition duration-300 z-10 mx-2"
-      (click)="scrollRight()"
-    >
-      &gt; <!-- Right Arrow -->
-    </button>
-  </div>
+    <div class="relative flex items-center justify-center">
+      <!-- Centered Navigation Buttons -->
+      <div class="flex">
+        <!-- Left Arrow Button -->
+        <button
+          class="group w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-customYellow border border-transparent hover:border-customRed transition duration-300 z-10 mx-2"
+          (click)="scrollLeft()"
+        >
+          <fa-icon [icon]="faChevronLeft" class="text-customYellow group-hover:text-customRed" style="font-size: 0.8em;"></fa-icon>
+        </button>
 
-  <!-- Explore More aligned to the right -->
-  <a href="#" class="absolute right-0 text-lg text-customRed hover:underline font-neue">Explore more &gt;</a>
-</div>
+        <!-- Right Arrow Button -->
+        <button
+          class="group w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-customYellow border border-transparent hover:border-customRed transition duration-300 z-10 mx-2"
+          (click)="scrollRight()"
+        >
+          <fa-icon [icon]="faChevronRight" class="text-customYellow group-hover:text-customRed" style="font-size: 0.8em;"></fa-icon>
+        </button>
+      </div>  
 
+      <!-- Explore More aligned to the right -->
+      <a href="/speakers" class="absolute right-0 text-lg text-customRed hover:underline font-neue font-light">explore more &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
+    </div>
   </div>
 </section>
 
 <!--speakers-->
 
 <!--students should join-->
-<section class="py-16 px-8 mt-8 relative">
-  <!-- Background Gradient with Transparency -->
-  <div class="absolute inset-0 bg-gradient-to-r from-[#471408] to-[#470F03] opacity-80 rounded-xl"></div>
-
-  <div class="max-w-6xl mx-auto relative z-10">
+<section class="py-16 px-8 mt-8 bg-cover bg-center rounded-3xl" style="background-image: url('../../../assets/info-bg.png');">
+  <div class="max-w-6xl mx-auto">
     <!-- Heading -->
-    <h2 class="text-3xl font-bold text-customYellow mb-8 text-center">
-      WHY SHOULD STUDENTS GATHER IN NRW 6.0?
+    <h2 class="text-3xl font-integral text-[#DDBB81] mb-8 text-center">
+      WHY SHOULD STUDENTS GATHER <b> IN NRW 6.0?</b>
     </h2>
 
     <!-- Quote Section -->
     <div class="p-8 mb-8">
-      <p class="text-lg text-customYellow italic text-left">
-        "NRW is the nexus for tech enthusiasts, featuring stellar speakers, dynamic networking sessions, hands-on workshops, and thrilling AI and technology challenges. It's a hub where innovation meets collaboration, empowering a new wave of tech pioneers in the region. Don't miss out on this electrifying event!"
+      <p class="font-neue font-thin text-lg text-[#DDBB81]  text-left" style="letter-spacing: 0.02em;">
+        "<b>NRW </b>is the nexus for tech enthusiasts, featuring <b>stellar speakers</b>, dynamic <b>networking sessions</b>, hands-on <b>workshops</b>, and thrilling<b> AI and technology challenges</b>. It's a hub where innovation meets collaboration, empowering a new wave of tech pioneers in the region. Don't miss out on this electrifying event!"
       </p>
     </div>
 
@@ -244,8 +242,8 @@
 <div class="mb-8 flex flex-col md:flex-row items-center gap-8">
   <!-- Text Content -->
   <div class="flex-1">
-    <h3 class="text-2xl font-bold text-customYellow mb-4 text-left">NETWORKING AND EXHIBITION</h3>
-    <p class="text-lg text-customYellow mb-4 text-left">
+    <h3 class="text-2xl font-integral text-[#DDBB81] mb-4 text-left">NETWORKING AND EXHIBITION</h3>
+    <p class="text-lg font-neue font-light text-[#DDBB81] mb-4 text-left" style="letter-spacing: 0.02em;">
       National Robotics Weekend not only fosters innovation but also cultivates a community through its networking and exhibition opportunities. The event's job fair and student project exhibition are pivotal for establishing connections and showcasing talent.
     </p>
   </div>
@@ -259,43 +257,43 @@
     />
   </div>
 </div>
-    <p class="text-customYellow text-left">To enhance these activities, consider incorporating:</p>
-      <ul class="list-disc list-inside space-y-2 text-lg text-customYellow text-left">
-        <li>Interactive Panels: Invite industry leaders to discuss emerging trends in robotics, providing attendees with insights into the future of the field.</li>
-        <li>Mentorship Sessions: Pair students with professionals for one-on-one mentorship, offering guidance on career development within the robotics sector.</li>
-        <li>Innovation Challenges: Host mini-competitions during the exhibition, encouraging participants to solve real-world problems presented by partner companies.</li>
+    <p class="text-[#DDBB81] text-left text-lg font-neue font-light" style="letter-spacing: 0.02em;">To enhance these activities, consider incorporating:</p>
+      <ul class="font-neue font-light px-4 py-2 list-disc  text-lg text-[#DDBB81] text-left" style="letter-spacing: 0.02em;">
+        <li><b>Interactive Panels:</b> Invite industry leaders to discuss emerging trends in robotics, providing attendees with insights into the future of the field.</li>
+        <li><b>Mentorship Sessions:</b> Pair students with professionals for one-on-one mentorship, offering guidance on career development within the robotics sector.</li>
+        <li><b>Innovation Challenges:</b> Host mini-competitions during the exhibition, encouraging participants to solve real-world problems presented by partner companies.</li>
       </ul>
     </div>
 
     <!-- Lead Generation Section -->
-    <div class="mb-8 flex items-center">
-      <!-- Image Container (1/4 Width) -->
-      <div class="w-1/4 pr-6">
+    <div class="m-8 py-8 flex items-center">
+      <!-- Image Container (1/3 Width) -->
+      <div class="w-1/3 pr-6">
         <img src="../../../assets/students-2.png" alt="Lead Generation" class="w-full h-auto rounded-lg shadow-lg">
       </div>
     
-      <!-- Text Content (3/4 Width) -->
-      <div class="w-3/4">
-        <h3 class="text-2xl text-left font-bold text-customYellow mb-4">LEAD GENERATION</h3>
-        <p class="text-lg text-left text-customYellow">
-          In a world where the boundaries between politics, technology, and business blur, NRW stands as a beacon of opportunity. Here, at NRW, we embrace those shaping the future. Our community is diverse: future entrepreneurs, visionaries, and innovators. Forge connections, strike deals, and discover the unexpected. Join us and be part of the change.
+      <!-- Text Content (2/3 Width) -->
+      <div class="w-2/3">
+        <h3 class="text-2xl text-left font-integral text-[#DDBB81] mb-4">LEAD GENERATION</h3>
+        <p class="text-lg font-neue font-light text-left text-[#DDBB81]">
+          In a world where the boundaries between politics, technology, and business blur, NRW stands as a beacon of opportunity.<br/> Here, at NRW, we embrace those shaping the future. Our community is diverse: future entrepreneurs, visionaries, and innovators. Forge connections, strike deals, and discover the unexpected. Join us and be part of the change.
         </p>
       </div>
     </div>
     
 
     <!-- Learning and Development Section -->
-    <div class="mb-8 flex flex-col md:flex-row items-center">
-      <!-- Text Content (Full Width on Mobile, 3/4 Width on Desktop) -->
-      <div class="w-full md:w-3/4 md:pr-6">
-        <h3 class="text-2xl font-bold text-customYellow mb-4 text-left">LEARNING AND DEVELOPMENT</h3>
-        <p class="text-lg text-customYellow text-left">
+    <div class="m-8 py-8 flex flex-col md:flex-row items-center">
+      <!-- Text Content (Full Width on Mobile, 2/3 Width on Desktop) -->
+      <div class="w-full md:w-2/3 md:pr-6">
+        <h3 class="text-2xl font-integral text-[#DDBB81] mb-4 text-left">LEARNING AND DEVELOPMENT</h3>
+        <p class="text-lg font-neue font-light text-[#DDBB81] text-left">
           National Robotics Weekend not only fosters innovation but also cultivates a community through its networking and exhibition opportunities. The event's job fair and student project exhibition are pivotal for establishing connections and showcasing talent.
         </p>
       </div>
     
-      <!-- Image Container (Full Width on Mobile, 1/4 Width on Desktop) -->
-      <div class="w-full md:w-1/4 mt-6 md:mt-0">
+      <!-- Image Container (Full Width on Mobile, 1/3 Width on Desktop) -->
+      <div class="w-full md:w-1/3 mt-6 md:mt-0">
         <img
           src="../../../assets/students-3.png"
           alt="Learning and Development"
@@ -306,9 +304,7 @@
 
     <!-- Explore More Button -->
     <div class="text-right">
-      <a href="coming-soon" class="inline-block text-lg text-customYellow font-bold hover:underline">
-        <p>View more</p>
-      </a>
+      <a href="/technical-challenges" class="inline-block text-lg text-[#DDBB81] hover:underline font-neue font-thin">explore more on nrw 7.0 plots &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
     </div>
   </div>
 </section>
@@ -316,12 +312,12 @@
 <!--students should join--> 
 <!--sponsors-->
 <!-- Sponsors Section -->
-<section class="py-16 mt-4">
+<section class="py-32 mt-4">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-customRed mb-8">MEET <b>OUR SPONSORS</b></h2>
+    <h2 class="text-3xl font-integral text-customRed mb-8">MEET <b>OUR SPONSORS</b></h2>
 
     <!-- Marquee Container -->
-    <div class="marquee-container mt-4">
+    <div class="marquee-container mt-4 min-h-[250px] flex items-center">
       <div class="marquee-content">
         <div class="marquee-group">
           <img src="../../../assets/ST.png" alt="Sponsor 1">
@@ -350,9 +346,9 @@
     </div>
 
     <!-- Call to Action -->
-    <p class="text-sm text-customRed mt-6">
+    <p class="text-sm font-neue font-light text-customRed mt-6">
       Wanna become a partner? 
-      <a href="mailto:nrwcongress@gmail.com" class="text-customRed font-semibold hover:underline">
+      <a href="mailto:nrwcongress@gmail.com" class="hover:underline">
         Contact us now
       </a>
     </p>

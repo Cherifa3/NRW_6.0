@@ -7,10 +7,14 @@
   flex-direction: column; /* Stacks children vertically (navbar on top, content below) */
   padding: 20px; /* Adds some padding around the content */
 }
+.image-80 {
+  width: 80%;
+  height: auto;
+
+}
 
 .custom-list {
     list-style: none; /* Remove default list bullets */
-    padding-left: 1.5rem; /* Add some padding to align the custom icon */
   }
   
   .custom-list li {
@@ -63,8 +67,7 @@
 
 .marquee-content {
   display: flex;
-  width: 200%; /* Ensures smooth looping */
-  animation: marquee 15s linear infinite;
+  animation: marquee 6s linear infinite;
 }
 
 .marquee-group {
@@ -79,5 +82,5 @@
 .marquee-group img {
   height: 150px;
   object-fit: contain;
-  max-width: 250px; /* Prevents logos from being too large */
+  width: auto;
 }
