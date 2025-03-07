@@ -3,23 +3,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     text-align: center;
-    font-family: Arial, sans-serif;
+    margin-top: 50px;
   }
   
   h1 {
-    font-size: 3rem;
     margin-bottom: 10px;
   }
   
+.underline {
+  width: 20%;
+  height: 1.5px; /* Line thickness */
+  background: #EED1A1; /* Line color */
+  margin: 20px ; /* Centers the line and adds space from text */
+} 
   p {
-    font-size: 1.5rem;
-    color: #666;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.75px;
   }
   
   .coming-soon-image {
-    width: 300px;
+    width: 400px;
     margin-top: 20px;
   }
   
