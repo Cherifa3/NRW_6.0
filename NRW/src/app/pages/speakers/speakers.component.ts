@@ -19,7 +19,7 @@ export class SpeakersComponent {
     Chair of ACM Chapter in Saudi Arabia<br>
     Director of Robotics and Internet of Things Unit at Prince Sultan University<br>
     Founder of ROS Community in Tunisia`,
-      imageSrc: '../../assets/anis-koubaa.png',
+      imageSrc: '../../assets/speakers/anis-koubaa.png',
       linkedinLink: 'https://www.linkedin.com/in/aniskoubaa/'
     },
     {
@@ -29,7 +29,7 @@ export class SpeakersComponent {
      Chaired the ASME International Design Engineering Technical Conferences (IDETC) and the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)<br>
     Recipient of the Presidential Early Career Award for Scientists and Engineers (PECASE) and a fellow of the American Society of Mechanical Engineers<br>
    `,
-      imageSrc: '../../assets/James Schmiedeler.png',
+      imageSrc: '../../assets/speakers/James Schmiedeler.png',
       linkedinLink: 'https://www.linkedin.com/in/jim-schmiedeler-3135931/'
     },
     {
@@ -39,7 +39,7 @@ export class SpeakersComponent {
       Resident of the IEEE Intelligent Transportation Systems Society (IEEE ITSS) for the years 2022 and 2023.<br>
     Chair for the Technical Activities Committee (TAC) on Human Factors in Intelligent Transportation Systems<br>
     Founder and chair of the Austrian IEEE ITSS chapter<br>`,
-      imageSrc: '../../assets/Dr. CristinaOlaverri.png',
+      imageSrc: '../../assets/speakers/Dr. CristinaOlaverri.png',
       linkedinLink: 'https://www.linkedin.com/in/cristina-olaverri-monreal-06b41212/'
     },
     {
@@ -47,7 +47,7 @@ export class SpeakersComponent {
       lastName: 'SAHBANI',
       role: `Associate Professor at Sorbonne University - Université Pierre & Marie Curie -  in Paris<br>
        CEO & Founder of Enova Robotics S.A. <br>`,
-      imageSrc: '../../assets/anis_sahbani.png',
+      imageSrc: '../../assets/speakers/anis_sahbani.png',
       linkedinLink: 'https://www.linkedin.com/in/aniss/'
     },
     
@@ -57,7 +57,7 @@ export class SpeakersComponent {
       role: `Professor-Department of Computer Science <br> Director of the Robotics Laboratory at Stanford University <br>
       President of the International Foundation of Robotics Research (IFRR) and an IEEE Fellow<br>
     Knight of the National Order of Merit and a member of the National Academy of Engineering<br>`,
-      imageSrc: '../../assets/Khatib-Oussama.png',
+      imageSrc: '../../assets/speakers/Khatib-Oussama.png',
       linkedinLink: 'https://www.linkedin.com/in/oussama-khatib-23469631b/'
     },
     {
@@ -66,7 +66,7 @@ export class SpeakersComponent {
       role: `ML Cloud Solution Architect <br>
       AWS Cloud Solution Architect<br>
     Microsoft AI & IoT Lab EMEA<br>`,
-      imageSrc: '../../assets/oussema-chelli.png',
+      imageSrc: '../../assets/speakers/oussema-chelli.png',
       linkedinLink: 'https://www.linkedin.com/in/oussamachelly/'
     },
     {
@@ -76,7 +76,7 @@ export class SpeakersComponent {
       Artificial Intelligence Speaker<br>
     Artificial Intelligence Guest Lecturer<br>
     Mentor - Entrepreneur (Data, Data and Data)<br>`,
-      imageSrc: '../../assets/firas-ben-hassen.png',
+      imageSrc: '../../assets/speakers/firas-ben-hassen.png',
       linkedinLink: 'https://www.linkedin.com/in/firas-ben-hassan-22bab3101/'
     }
   ];

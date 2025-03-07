@@ -1,0 +1,10 @@
+nav {
+    position: absolute; /* Floats on top of everything */
+    width: 100%;       /* Full width */
+    top: 0;            /* Always stick to the top */
+    left: 0;
+    z-index: 10;       /* High z-index to always be above everything */
+    background: none;  /* Transparent background */
+    box-shadow: none;  /* Optional: No shadow */
+  }
+  

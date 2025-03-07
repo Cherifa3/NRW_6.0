@@ -13,7 +13,7 @@ export class OcTeamComponent {
     { firstName: 'Eya' , lastName: ' Karoui', role: 'Head of Administrative Affairs', imageSrc: '../../assets/eya-karoui.jpg' },
     { firstName: 'Yassine' , lastName: ' Najar', role: 'Head of Technical', imageSrc: '../../assets/yassine-najjar.jpg' },
     { firstName: 'Wahib' , lastName: ' ben marzouk', role: 'Head of Branding', imageSrc: '../../assets/wahib-ben-marzouk.jpg' },
-    { firstName: 'Cherifa' , lastName: ' Chaouch', role: 'Head of IT Department', imageSrc: '../../assets/cherifa-chaouech.jpg' },
+    { firstName: 'Cherifa' , lastName: ' Chaouch', role: 'Head of IT Department', imageSrc: '../../assets/oc-members/cherifa-chaouch.jpg' },
     { firstName: 'Rayhane' , lastName: ' Sahli', role: 'Head of Organization', imageSrc: '../../assets/ryhane-sahli.jpg' }
   ];
 

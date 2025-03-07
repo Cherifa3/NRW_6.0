@@ -12,13 +12,13 @@ export class HomeComponent {
   faChevronLeft= faChevronLeft;
   // List of speakers
   speakers = [
-    { firstName: 'JIM' , lastName: 'SCHMIEDELER', role: 'Professor at University of Notre Dame', imageSrc: '../../assets/James Schmiedeler.png' },
-    { firstName: 'ANIS' , lastName: 'KOUBAA', role: 'Director of Robotics and Internet of Things Unit at Prince Sultan University', imageSrc: '../../assets/anis-koubaa.png' },
-    { firstName: 'OUSSEMA' , lastName: 'CHELLY', role: 'ML Cloud Solution Architect , AWS Cloud Solution Architect , Microsoft AI & IoT Lab EMEA', imageSrc: '../../assets/oussema-chelli.png' },
-    { firstName: 'CRISTINIA' , lastName: 'MONREAL', role: 'Full professor and head of the Department Intelligent Transport Systems at the Johannes Kepler University Linz, in Austria.', imageSrc: '../../assets/Dr. CristinaOlaverri.png' },
-    { firstName: 'OUSSEMA' , lastName: 'KHATIB', role: ' Professor of Computer Science and the Director of the Robotics Laboratory at Stanford University', imageSrc: '../../assets/Khatib-Oussama.png' },
-    { firstName: 'ANIS' , lastName: 'SAHBANI', role: 'Associate Professor at Sorbonne University - CEO & Founder of Enova Robotics S.A.', imageSrc: '../../assets/anis_sahbani.png' },
-    { firstName: 'FIRAS' , lastName: 'BEN HASSEN', role: 'Deputy Head of Data Science Services Mentor , Entrepreneur (Data, Data and Data)', imageSrc: '../../assets/firas-ben-hassen.png' },
+    { firstName: 'JIM' , lastName: 'SCHMIEDELER', role: 'Professor at University of Notre Dame', imageSrc: '../../assets/speakers/James Schmiedeler.png' },
+    { firstName: 'ANIS' , lastName: 'KOUBAA', role: 'Director of Robotics and Internet of Things Unit at Prince Sultan University', imageSrc: '../../assets/speakers/anis-koubaa.png' },
+    { firstName: 'OUSSEMA' , lastName: 'CHELLY', role: 'ML Cloud Solution Architect , AWS Cloud Solution Architect , Microsoft AI & IoT Lab EMEA', imageSrc: '../../assets/speakers/oussema-chelli.png' },
+    { firstName: 'CRISTINIA' , lastName: 'MONREAL', role: 'Full professor and head of the Department Intelligent Transport Systems at the Johannes Kepler University Linz, in Austria.', imageSrc: '../../assets/speakers/Dr. CristinaOlaverri.png' },
+    { firstName: 'OUSSEMA' , lastName: 'KHATIB', role: ' Professor of Computer Science and the Director of the Robotics Laboratory at Stanford University', imageSrc: '../../assets/speakers/Khatib-Oussama.png' },
+    { firstName: 'ANIS' , lastName: 'SAHBANI', role: 'Associate Professor at Sorbonne University - CEO & Founder of Enova Robotics S.A.', imageSrc: '../../assets/speakers/anis_sahbani.png' },
+    { firstName: 'FIRAS' , lastName: 'BEN HASSEN', role: 'Deputy Head of Data Science Services Mentor , Entrepreneur (Data, Data and Data)', imageSrc: '../../assets/speakers/firas-ben-hassen.png' },
    
   ];
 
