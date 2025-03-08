@@ -1,3 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+main {
+  flex: 1; /* This makes the content push the footer down */
+}
+
 nav {
     position: absolute; /* Floats on top of everything */
     width: 100%;       /* Full width */
@@ -7,4 +18,20 @@ nav {
     background: none;  /* Transparent background */
     box-shadow: none;  /* Optional: No shadow */
   }
+  .bg-lightMode {
+    background: url('../assets/BACKGROUND.webp') repeat top center ; /* Fixed positioning */
+    background-size: 100%; /* Ensures the image covers the entire container */
+    min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+    will-change: transform;  /* Optimizes rendering for background images */
+  }
   
+  .bg-darkMode {
+      background: url('../assets/dark-background.webp') repeat bottom center/cover;  /* Dark Image */
+      will-change: transform; 
+  }
+
+  .bg-homeMode {
+    width: 100%;
+    background: url('../assets/HOME-BG.webp')  repeat-y bottom center/contain; /* Home Image */
+    will-change: transform; 
+  }

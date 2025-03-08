@@ -23,14 +23,14 @@
            }">Program</a>
       </li>
       <li class="navbar-item">
-        <a routerLink="/Technical-challenges" routerLinkActive="font-bold " [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{
-             'text-customLight': isSpecifiedRoute()
-           }">Technical Challenges</a>
-      </li>
-      <li class="navbar-item">
         <a routerLink="/oc-team" routerLinkActive="font-bold " [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{
              'text-customLight': isSpecifiedRoute()
            }">OC team</a>
+      </li>
+      <li class="navbar-item">
+        <a routerLink="/Technical-challenges" routerLinkActive="font-bold " [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{
+             'text-customLight': isSpecifiedRoute()
+           }">Technical Challenges</a>
       </li>
       <li class="navbar-item">
         <a routerLink="/speakers" routerLinkActive="font-bold " [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{
@@ -46,10 +46,10 @@
 
     <!-- Contact Button -->
     <a href="mailto:nrwcongress@gmail.com"
-       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] transition-all duration-300 hover:font-bold hover:border"
+       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] transition-all duration-300transform hover:scale-115 "
        [ngClass]="{
-         'bg-customLight text-customRed hover:bg-[#1D150F] hover:text-customLight hover:border-customLight': isSpecifiedRoute(), 
-         'bg-customRed text-[#D8C59F] hover:bg-[#C7AE7E] hover:text-customRed hover:border-customRed': !isSpecifiedRoute()
+         'bg-customLight text-customRed ': isSpecifiedRoute(), 
+         'bg-customRed text-customLight ': !isSpecifiedRoute()
        }">
       Contact us
     </a>

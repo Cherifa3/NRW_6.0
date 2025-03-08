@@ -11,7 +11,7 @@ export class NavbarComponent {
 
   // Function to check if the current route is the specified route
   isSpecifiedRoute(): boolean {
-    const specifiedRoutes = ['/', '/Technical-challenges',  '/forum', '/speakers'];
+    const specifiedRoutes = [ '/Technical-challenges',  '/forum', '/speakers'];
     return specifiedRoutes.includes(this.stripTrailingSlash(this.router.url));
   }
 

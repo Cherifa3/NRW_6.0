@@ -1,0 +1,66 @@
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; // Space between time units
+    font-family: 'Integral CF', sans-serif; 
+    color: #4B1306; // Default text color
+    overflow: visible; // Ensure nothing is clipped
+    margin: 30px; // Add space below the countdown
+    min-height: 150px;
+  }
+  
+  .countdown-time {
+    min-height:100px;
+    display: flex;
+    gap: 20px; // Space between time units
+    text-align: center;
+    overflow: visible; 
+    padding: 20px 40px;
+    border: 1px solid rgba(75, 19, 6, 0.17);
+    border-radius: 20px;
+  }
+  .countdown-group {
+    display: flex;
+    align-items: center; // Vertically center the colon with the numbers
+  }
+  
+  .countdown-time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; // Center content vertically
+    overflow: visible; // Ensure nothing is clipped
+  }
+  
+  .countdown-time-value {
+    font-size: 70px; 
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .countdown-time-label {
+    font-size: 19px; // Size of the labels
+    margin-top: 20px; // Space between number and label
+    color: inherit; // Inherits color from parent
+    line-height: 1.2; // Ensure labels don't overlap
+    min-height:20px;
+  }
+  .countdown > * {
+    height: auto;          /* Allow the height to adjust to the content */
+    overflow-y: visible;   /* Show any overflow */
+  }
+  .countdown > *::before {
+    content: none !important; // Disable the numbers
+  }
+
+  .countdown-separator {
+    font-size: 48px; // Match the font size of the numbers
+    font-weight: bold;
+    margin: 0 5px; // Add some spacing around the colon
+    line-height: 1; // Prevent extra space around the colon
+  }

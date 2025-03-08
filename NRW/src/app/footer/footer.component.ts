@@ -10,7 +10,7 @@ export class FooterComponent {
   constructor(private router: Router) {}
 
   isSpecifiedRoute(): boolean {
-    const specificRoutes = ['/forum']; // Add your specific routes here
+    const specificRoutes = [ '/Technical-challenges',  '/forum', '/speakers']; // Add your specific routes here
     return specificRoutes.includes(this.router.url);
   }
 }

@@ -1,28 +1,28 @@
 
  
-<div class="background-container" [ngStyle]="{'background-image': 'url(../../../assets/header-home.png)'}">
+<div class="background-container" [ngStyle]="{'background-image': 'url(../../../assets/header-home.webp)'}">
 
 <!-- Main Content (Centered) -->
-    <div class="flex-1 flex flex-col justify-center items-center text-center px-6 mt-2">
-        <h1 class="sm:text-xl md:text-3xl font-integral uppercase text-customRed">
-            Welcome to the first
-        </h1>
-        <h2 class="sm:text-xl md:text-5xl font-integral font-medium uppercase text-customRed">
-          Tunisian National Robotics Congress
-        </h2>        
-
-        <p class="max-w-2xl text-sm sm:text-base text-customRed font-neue font-light mt-8">
-          Welcome to the official website of National Robotics Weekend, dive deeper into the details of our congress and 
-          don't hesitate to join us for an exceptional journey.
-        </p>
+    <div class="flex flex-col justify-start items-center text-center px-6  pt-40">
+  <!-- Preceding Elements -->
+  <h1 class="sm:text-xl md:text-3xl font-integral uppercase text-customRed">
+    Welcome to the first
+  </h1>
+  <h2 class="sm:text-xl md:text-5xl font-integral font-medium uppercase text-customRed mt-2">
+    Tunisian National Robotics Congress
+  </h2>
+  <p class="max-w-2xl text-sm sm:text-base text-customRed font-neue font-light  my-8" style="letter-spacing: 0.02em; ">
+    Welcome to the official website of National Robotics Weekend, dive deeper into the details of our congress and don't hesitate to join us for an exceptional journey.
+  </p>
         
     </div>
     <!-- counter-->
+    <app-countdown [targetDate]="yourTargetDate"></app-countdown>
     <!-- counter-->
 
-    <div class="flex items-center justify-center space-x-4 mt-4 mb-4">
-      <p class="text-customRed font-neue font-light">Learn more</p>
-      <button class="font-neue font-light bg-customRed text-[#D8C59F] px-8 py-2 rounded hover:bg-customRed-dark hover:text-customYellow-light transition duration-300 whitespace-nowrap ml-8 transform hover:scale-105">
+    <div class="flex items-center justify-center space-x-4 mt-8 mb-16">
+      <a href="#what-is-nrw" class="text-customRed font-neue font-light hover:underline transition duration-300 hover:scale-105" style="letter-spacing: 0.02em; ">Learn more</a>
+      <button class="font-neue font-light bg-customRed text-[#D8C59F] px-8 py-2 rounded hover:bg-customRed-dark hover:text-customYellow-light transition duration-300 whitespace-nowrap mx-16 transform hover:scale-105">
         Pre register now
         <img src="../../../assets/Icon.png" alt="Arrow Icon" class="w-2 h-1 ml-2 inline-block" />
       </button>
@@ -134,7 +134,7 @@
 
     <!-- Image on the right -->
     <div class="w-1/2">
-      <img src="../../../assets/ras.png" alt="NRW Image" class="rounded-3xl shadow-lg image-80 m-auto">
+      <img src="../../../assets/ras.webp" alt="NRW Image" class="rounded-3xl shadow-lg image-80 m-auto">
     </div>
   </div>
 </section>
@@ -160,9 +160,13 @@
         Arranging <b>“RoboCraft”</b> was a successful series where participants built autonomous robots, with attending the Esprit Ras Robots competition.
       </li>
     </ul>
-    <div class="text-right mt-6"> <!-- Added a div with text-right to align the link to the right -->
-      <a href="https://insat.ieee.tn/" class="text-lg text-customRed hover:underline font-neue font-light" style="letter-spacing: 0.02em;">explore more &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
+    <div class="text-right mt-6">
+      <a href="https://insat.ieee.tn/" 
+         class="text-lg text-customRed hover:underline transition duration-300 transform hover:scale-105 font-neue font-light inline-block ">
+         explore more &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon>
+      </a>
     </div>
+    
 </section>  
 <!--what is iee-->  
 <!--speakers-->
@@ -196,23 +200,23 @@
       <div class="flex">
         <!-- Left Arrow Button -->
         <button
-          class="group w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-customYellow border border-transparent hover:border-customRed transition duration-300 z-10 mx-2"
+          class="group w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-[#C5A671] border border-transparent hover:border-customRed transition duration-300 z-10 mx-2 hover:scale-105"
           (click)="scrollLeft()"
         >
-          <fa-icon [icon]="faChevronLeft" class="text-customYellow group-hover:text-customRed" style="font-size: 0.8em;"></fa-icon>
+          <fa-icon [icon]="faChevronLeft" class="text-[#C5A671] group-hover:text-customRed" style="font-size: 0.8em;"></fa-icon>
         </button>
 
         <!-- Right Arrow Button -->
         <button
-          class="group w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-customYellow border border-transparent hover:border-customRed transition duration-300 z-10 mx-2"
+          class="group w-10 h-10 flex items-center justify-center rounded-full bg-customRed hover:bg-[#C5A671] border border-transparent hover:border-customRed  transition duration-300 z-10 mx-2 hover:scale-105"
           (click)="scrollRight()"
         >
-          <fa-icon [icon]="faChevronRight" class="text-customYellow group-hover:text-customRed" style="font-size: 0.8em;"></fa-icon>
+          <fa-icon [icon]="faChevronRight" class="text-[#C5A671] group-hover:text-customRed" style="font-size: 0.8em;"></fa-icon>
         </button>
       </div>  
 
       <!-- Explore More aligned to the right -->
-      <a href="/speakers" class="absolute right-0 text-lg text-customRed hover:underline font-neue font-light">explore more &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
+      <a href="/speakers" class="absolute right-10 text-lg text-customRed hover:underline transition duration-300 hover:scale-105 font-neue font-light">explore more &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
     </div>
   </div>
 </section>
@@ -302,7 +306,7 @@
 
     <!-- Explore More Button -->
     <div class="text-right">
-      <a href="/technical-challenges" class="inline-block text-lg text-[#DDBB81] hover:underline font-neue font-thin">explore more on nrw 7.0 plots &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
+      <a href="/technical-challenges" class="inline-block text-lg text-[#DDBB81] hover:underline font-neue font-thin transition duration-300 hover:scale-105">explore more on nrw 7.0 plots &nbsp;<fa-icon [icon]="faChevronRight" style="font-size: 0.5em;"></fa-icon></a>
     </div>
   </div>
 </section>
@@ -314,39 +318,27 @@
   <div class="max-w-6xl mx-auto text-center">
     <h2 class="text-3xl font-integral text-customRed mb-8">MEET <b>OUR SPONSORS</b></h2>
 
-    <!-- Marquee Container -->
-    <div class="marquee-container mt-4 min-h-[250px] flex items-center">
-      <div class="marquee-content">
-        <div class="marquee-group">
-          <img src="../../../assets/sponsors/ST.png" alt="Sponsor 1">
-          <img src="../../../assets/sponsors/CSF.png" alt="Sponsor 2">
-          <img src="../../../assets/sponsors/UE.png" alt="Sponsor 3">
-          <img src="../../../assets/sponsors/Logo_Amen_Bank.png" alt="Sponsor 4">
-          <img src="../../../assets/sponsors/Mare_Custos.png" alt="Sponsor 5">
-          <img src="../../../assets/sponsors/sopal.png" alt="Sponsor 6">
-          <img src="../../../assets/sponsors/Logo-ontech.png" alt="Sponsor 7">
-          <img src="../../../assets/sponsors/CoWorky.png" alt="Sponsor 8">
-          <img src="../../../assets/sponsors/Frame.png" alt="Sponsor 9">
+        <!-- Marquee Container -->
+        <div class="marquee-container mt-4 min-h-[250px] flex items-center">
+          <div class="marquee-content">
+            <div class="marquee-group">
+              <img src="../../../assets/sponsors/ST.png" alt="Sponsor 1">
+              <img src="../../../assets/sponsors/CSF.png" alt="Sponsor 2">
+              <img src="../../../assets/sponsors/UE.png" alt="Sponsor 3">
+              <img src="../../../assets/sponsors/Logo_Amen_Bank.png" alt="Sponsor 4">
+              <img src="../../../assets/sponsors/Mare_Custos.png" alt="Sponsor 5">
+              <img src="../../../assets/sponsors/sopal.png" alt="Sponsor 6" class="small-logo">
+              <img src="../../../assets/sponsors/Logo-ontech.png" alt="Sponsor 7" class="small-logo">
+              <img src="../../../assets/sponsors/CoWorky.png" alt="Sponsor 8">
+              <img src="../../../assets/sponsors/Falku.png" alt="Sponsor 9"  class="small-logo">
+            </div>
+          </div>
         </div>
-        <!-- Duplicate for seamless animation -->
-        <div class="marquee-group">
-          <img src="../../../assets/sponsors/ST.png" alt="Sponsor 1">
-          <img src="../../../assets/sponsors/CSF.png" alt="Sponsor 2">
-          <img src="../../../assets/sponsors/UE.png" alt="Sponsor 3">
-          <img src="../../../assets/sponsors/Logo_Amen_Bank.png" alt="Sponsor 4">
-          <img src="../../../assets/sponsors/Mare_Custos.png" alt="Sponsor 5">
-          <img src="../../../assets/sponsors/sopal.png" alt="Sponsor 6">
-          <img src="../../../assets/sponsors/Logo-ontech.png" alt="Sponsor 7">
-          <img src="../../../assets/sponsors/CoWorky.png" alt="Sponsor 8">
-          <img src="../../../assets/sponsors/Frame.png" alt="Sponsor 9">
-        </div>
-      </div>
-    </div>
-
     <!-- Call to Action -->
     <p class="text-sm font-neue font-light text-customRed mt-6">
-      Wanna become a partner? 
-      <a href="mailto:nrwcongress@gmail.com" class="hover:underline">
+      Wanna become a partner? &nbsp;
+      <a href="mailto:nrwcongress@gmail.com" 
+         class="hover:underline transition duration-300 hover:scale-105 inline-block">
         Contact us now
       </a>
     </p>

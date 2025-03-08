@@ -1,14 +1,19 @@
+<div class="container" 
+     [ngClass]="{
+       'bg-darkMode': isSpecifiedRoute(), 
+       'bg-lightMode': !isSpecifiedRoute() && !isAnotherCondition(),
+       'bg-homeMode': isAnotherCondition()
+     }">
+  <!-- Navbar at the top -->
+  <nav>
+     <app-navbar></app-navbar>
+  </nav>
 
-<!-- Navbar at the top -->
-<nav >
-   <app-navbar></app-navbar>
- </nav>
+  <!-- Main Content -->
+  <router-outlet class="bg-transparent"></router-outlet>
 
+  <app-chatbot class="fixed bottom-4 right-4 z-50"></app-chatbot>
 
-<!-- Main Content -->
-   <router-outlet class="bg-transparent"></router-outlet>
-
-   <app-chatbot class="fixed bottom-4 right-4 z-50"></app-chatbot>
-
-<!-- Footer (Always at Bottom) -->
-<app-footer></app-footer>
+  <!-- Footer (Always at Bottom) -->
+  <app-footer></app-footer>
+</div>

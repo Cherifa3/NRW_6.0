@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef ,OnInit} from '@angular/core';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +7,54 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './home.component.html', // Replace with your home component's template
   styleUrls: ['./home.component.scss'], // Replace with your home component's styles
 })
-export class HomeComponent {
+export class HomeComponent  implements OnInit {
+    yourTargetDate = new Date('2025-06-27T23:59:59'); // Set your target date here
+  
+  constructor() { }
+
+  ngOnInit(): void {
+    this.calculateMarqueeWidth();
+    this.setupInfiniteMarquee();
+  }
+
+  calculateMarqueeWidth() {
+    const marqueeGroups = document.querySelectorAll('.marquee-group');
+    marqueeGroups.forEach(group => {
+      const htmlGroup = group as HTMLElement; // Cast to HTMLElement
+      let totalWidth = 0;
+      htmlGroup.querySelectorAll('img').forEach(img => {
+        totalWidth += img.clientWidth + 32; // Add gap (2rem = 32px)
+      });
+      htmlGroup.style.width = `${totalWidth}px`; // Set explicit width
+    });
+  }
+
+  setupInfiniteMarquee() {
+    const marqueeContent = document.querySelector('.marquee-content') as HTMLElement; // Cast to HTMLElement
+    const marqueeGroup = document.querySelector('.marquee-group') as HTMLElement; // Cast to HTMLElement
+  
+    if (marqueeContent && marqueeGroup) {
+      // Calculate the total width of one marquee-group
+      let totalWidth = 0;
+      marqueeGroup.querySelectorAll('img').forEach(img => {
+        totalWidth += img.clientWidth + 32; // Add gap (2rem = 32px)
+      });
+  
+      // Calculate how many duplicates are needed to cover the viewport
+      const viewportWidth = window.innerWidth;
+      const numberOfDuplicates = Math.ceil((viewportWidth * 2) / totalWidth);
+  
+      // Duplicate the marquee group enough times
+      for (let i = 0; i < numberOfDuplicates; i++) {
+        const clone = marqueeGroup.cloneNode(true) as HTMLElement;
+        marqueeContent.appendChild(clone);
+      }
+  
+      // Set the width of the marquee-content to the total width of all duplicates
+      marqueeContent.style.width = `${totalWidth * numberOfDuplicates}px`;
+    }
+  }
+
   faChevronRight = faChevronRight;
   faChevronLeft= faChevronLeft;
   // List of speakers
@@ -40,4 +87,6 @@ export class HomeComponent {
       behavior: 'smooth',
     });
   }
+
+
 }
