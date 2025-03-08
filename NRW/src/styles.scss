@@ -2,14 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body {
+
+/* Prevent horizontal overflow */
+body, html {
   scroll-behavior: smooth; /* Smooth scrolling */
-  backface-visibility: hidden; /* Prevents white flickers during scroll */
+  overflow-x: hidden; // Hide horizontal scrollbar
+  width: 100%; // Ensure the body takes full width
+  max-width: 100%; // Prevent content from exceeding the screen width
 }
 img {
   image-rendering: optimizeQuality;
 }
 
+
+.no-scroll {
+  overflow: hidden; // Disable scrolling
+  height: 100vh; // Prevent content from shifting
+}
 
 
 @font-face {

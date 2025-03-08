@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  faXmark = faXmark;
   constructor(private router: Router) {}
 
   // Function to check if the current route is the specified route
@@ -26,5 +28,14 @@ export class NavbarComponent {
   // Helper function to strip trailing slashes from the route
   private stripTrailingSlash(url: string): string {
     return url.endsWith('/') ? url.slice(0, -1) : url;
+  }
+
+  toggleMenu(event: Event) {
+    const isChecked = (event.target as HTMLInputElement).checked;
+    if (isChecked) {
+      document.body.classList.add('no-scroll'); // Disable scrolling
+    } else {
+      document.body.classList.remove('no-scroll'); // Enable scrolling
+    }
   }
 }

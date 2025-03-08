@@ -4,15 +4,35 @@
     <!-- Logo Section -->
     <div class="navbar-brand flex items-center">
       <!-- Default Logo -->
+      <a routerLink="/">
       <img *ngIf="!isSpecifiedRoute()" src="../../assets/LOGO-NRW.png" alt="Logo" class="w-[65px] h-[62.5px] mr-4">
-      
+      </a>
+
       <!-- Alternate Logo for Specified Route -->
+      <a routerLink="/">
       <img *ngIf="isSpecifiedRoute()" src="../../assets/LOGO-NRW-LIGHT.png" alt="Alternate Logo" class="w-[65px] h-[62.5px] mr-4">
+      </a>
     </div>
 
+    <!-- Hamburger Menu for Mobile -->
+    <input type="checkbox" id="navbar-toggle" class="navbar-toggle hidden" (input)="toggleMenu($event)">  
+    <label for="navbar-toggle" class="navbar-toggle-icon md:hidden" >
+      <span class="icon-bar" [ngClass]="{'bg-customLight': isSpecifiedRoute()}"></span>
+      <span class="icon-bar"[ngClass]="{'bg-customLight': isSpecifiedRoute()}"></span>
+      <span class="icon-bar"[ngClass]="{'bg-customLight': isSpecifiedRoute()}"></span>
+    </label>
+
     <!-- Navigation Links -->
-    <ul class="navbar-links flex space-x-6">
-      <li class="navbar-item">
+    <ul class="navbar-links flex  md:flex">
+
+            <!-- Close Button -->
+            <li class="navbar-item close-button">
+              <label for="navbar-toggle" class="close-icon">
+                <fa-icon [icon]="faXmark"></fa-icon>
+              </label>
+            </li>
+
+      <li class="navbar-item ">
         <a routerLink="/" routerLinkActive="font-bold " [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{
              'text-customLight': isSpecifiedRoute()
            }">Home</a>
@@ -46,7 +66,7 @@
 
     <!-- Contact Button -->
     <a href="mailto:nrwcongress@gmail.com"
-       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] transition-all duration-300transform hover:scale-115 "
+       class="flex items-center justify-center w-[125px] h-[42px] rounded-[32px] transition-all duration-300 transform hover:scale-115 md:flex"
        [ngClass]="{
          'bg-customLight text-customRed ': isSpecifiedRoute(), 
          'bg-customRed text-customLight ': !isSpecifiedRoute()

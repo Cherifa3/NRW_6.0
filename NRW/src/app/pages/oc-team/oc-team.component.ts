@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class OcTeamComponent {
   
   heads = [
-    { firstName: 'Ghada' , lastName: 'Daghmoura', role: 'Project Manager', imageSrc: '../../assets/oc-members/ghada-daghmoura.webp' },
+    { firstName: 'Ghada' , lastName: 'Daghmoura', role: 'Congress Chair', imageSrc: '../../assets/oc-members/ghada-daghmoura.webp' },
     { firstName: 'Abir' , lastName: ' bel haj ammar', role: 'Head of External Relations & Sponsoring', imageSrc: '../../assets/oc-members/abir-haj-ammar.webp' },
     { firstName: 'Eya' , lastName: ' Karoui', role: 'Head of Administrative Affairs', imageSrc: '../../assets/oc-members/eya-karoui.webp' },
     { firstName: 'Yassine' , lastName: ' Najar', role: 'Head of Technical', imageSrc: '../../assets/oc-members/yassine-najjar.webp' },
