@@ -1,7 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+
+/* Prevent horizontal overflow */
+body, html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  overflow-x: hidden; // Hide horizontal scrollbar
+  width: 100%; // Ensure the body takes full width
+  max-width: 100%; // Prevent content from exceeding the screen width
+  margin: 0;
+  padding: 0;
+}
+img {
+  image-rendering: optimizeQuality;
+}
+
+
+.no-scroll {
+  overflow: hidden; // Disable scrolling
+  height: 100vh; // Prevent content from shifting
+}
 
 
 @font-face {
@@ -28,6 +46,13 @@
     font-weight: 800; /* Extra Bold */
     font-style: normal;
   }
+  @font-face {
+    font-family: 'NeueMontreal';
+    src: url('/assets/fonts/NeueMontreal-Bold.otf') format('opentype');
+    font-weight: 500; 
+    font-style: normal;
+  }
+
   @font-face {
     font-family: 'NeueMontreal';
     src: url('/assets/fonts/NeueMontreal-Medium.otf') format('opentype');

@@ -1,0 +1,109 @@
+
+.navbar, 
+.navbar-links, 
+.navbar-item, 
+.navbar-link, 
+.navbar-button a {
+    font-family: 'NeueMontreal', sans-serif;
+    font-weight: 300;
+    font-size: 18;
+}
+/* Default styles (for desktop) */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.close-button {
+    display: none; // Hide the close button
+  }
+
+ .navbar-toggle {
+    display: none; // Hide the checkbox
+  }
+  
+  .navbar-toggle-icon {
+    display: none; // Hide the hamburger icon by default
+    flex-direction: column;
+    cursor: pointer;
+  }.icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #4B1306; // Default color (matches customRed in Tailwind config)
+    margin: 4px 0;
+    transition: background-color 0.3s ease; // Smooth transition for color change
+  }
+  
+  .bg-customLight {
+    background-color: #EED1A1 !important; // Ensure this overrides the default color
+  }
+ /* Mobile styles */
+@media (max-width: 1000px) {
+    .navbar-links {
+      position: fixed;
+      top: 0;
+      right: -100%; // Start off-screen
+      height: 100vh; // Full screen height
+      background-color: rgba(255, 255, 255, 0.95); // Semi-transparent white background
+      transition: right 0.3s ease-in-out; // Smooth slide-in animation
+      z-index: 1000; // Ensure it's above other content
+      display: flex; // Show links when toggled
+      flex-direction: column;
+      width: 90%; // Adjust width as needed
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      align-items: flex-start;
+      padding-top: 80px; // Adjust based on navbar height
+      padding-left: 20px; // Reduce padding-left
+    }
+  
+    .navbar-item {
+      width: 100%; // Ensure full width
+      text-align: left;
+      padding: 1rem 0; // Consistent padding
+      border-bottom: 1px solid #e0e0e0; // Add a line between links
+    }
+  
+    .navbar-item:last-child {
+      border-bottom: none; // Remove the line for the last item
+    }
+  
+    .navbar-item a {
+      font-size: 25px; // Larger font size for mobile
+      color: #4B1306; // Customize the link color
+      text-decoration: none;
+      transition: color 0.3s ease;
+      padding: 0; // Ensure no extra padding
+      margin: 0; // Ensure no extra margin
+    }
+  
+    .navbar-item a[routerLinkActive="font-bold"] {
+      font-weight: bold; // Active link style
+      border: none; // Remove border
+      outline: none; // Remove outline
+    }
+  
+    /* Show links when the checkbox is checked */
+    #navbar-toggle:checked ~ .navbar-links {
+      right: 0; // Slide in from the right
+    }
+
+    .navbar-toggle-icon {
+        display: flex; // Show the hamburger icon on mobile
+        order: 3; // Hamburger icon comes second
+      }
+    
+      /* Show links when the checkbox is checked */
+      #navbar-toggle:checked ~  {
+        display: flex;
+      }
+    
+      .navbar-brand {
+        order: 1; // Logo comes first
+      }
+
+      .contact-button {
+        order: 2; // Contact button comes last
+      }
+      .close-button {
+        display: block; // Show the close button
+      }
+}

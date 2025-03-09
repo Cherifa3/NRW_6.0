@@ -13,6 +13,7 @@ module.exports = {
 
       colors: {
         customYellow: '#E8C17E',
+        customLight: '#EED1A1',
         customRed: '#4B1306',
       },
     },

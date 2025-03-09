@@ -1,6 +1,21 @@
+/* Background container */
+.background-container {
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  min-height: 80vh; /* Ensures the container takes at least 80% of the viewport height */
+  display: flex;
+  flex-direction: column; /* Stacks children vertically (navbar on top, content below) */
+  padding: 20px; /* Adds some padding around the content */
+}
+
+.image-80 {
+  width: 80%;
+  height: auto;
+
+}
+
 .custom-list {
     list-style: none; /* Remove default list bullets */
-    padding-left: 1.5rem; /* Add some padding to align the custom icon */
   }
   
   .custom-list li {
@@ -33,14 +48,14 @@
 .scroll-hidden::-webkit-scrollbar {
   display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
 }
-/* Custom gradient with transparency */
+
 /* Marquee Animation */
 @keyframes marquee {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
@@ -53,21 +68,32 @@
 
 .marquee-content {
   display: flex;
-  width: 200%; /* Ensures smooth looping */
-  animation: marquee 15s linear infinite;
+  animation: marquee 30s linear infinite; /* Adjust duration as needed */
 }
 
 .marquee-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  min-width: 100%;
+  flex-shrink: 0; /* Prevent the group from shrinking */
   gap: 2rem; /* Adds spacing between logos */
+  padding: 0 1rem; /* Optional: Add padding to the sides */
 }
 
 .marquee-group img {
-  height: 150px;
+  height: 150px; /* Default size for all logos */
+  width: auto; /* Ensure logos maintain their aspect ratio */
   object-fit: contain;
-  max-width: 250px; /* Prevents logos from being too large */
+  flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+/* Decrease size for sponsor 6 and 7 */
+.marquee-group img.small-logo {
+  height: 70px; /* Adjust this value as needed */
+}
+
+
+
+.countdown > * {
+  position: relative; // Ensure the parent is positioned
+  overflow: hidden; // Clip the overflowing numbers
 }

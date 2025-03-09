@@ -1,0 +1,18 @@
+footer {
+   
+    font-family: 'NeueMontreal', sans-serif;
+    font-weight: 290; 
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+/* Footer Component CSS */
+
+    .bg-lightMode {
+    background: url('../../../assets/footerbg.png') repeat center center/cover; /* Light Image */
+  }
+  
+  .bg-darkMode {
+    background: none; /* Dark Image */
+  }
+  

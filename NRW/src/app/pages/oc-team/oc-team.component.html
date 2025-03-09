@@ -1,4 +1,4 @@
-<div class="hero text-customRed"> 
+<div class="hero text-customRed mt-40 px-4"> 
     <div class="hero-content text-center mt-8 ">
         <div class="max-w-full">
             <h1 class="text-3xl font-bold" style="font-family: 'Integral CF'; font-weight: 400;">
@@ -16,10 +16,10 @@
 <div class="hero text-customRed">  
     <div class="hero-content text-center mb-8">
         <div class="max-w-full">
-            <h1 class="text-xl font-bold mb-8" style="font-family: 'Integral CF'; font-weight: 400;">
+            <h1 class="text-xl font-bold mt-8 md:mb-8 px-8" style="font-family: 'Integral CF'; font-weight: 400;">
                 meet the <span style="font-weight: 800;">Head of Departments</span>
             </h1>
-            <div class="flex flex-wrap justify-center gap-4 max-w-screen-xl mx-auto">
+            <div class="heads-container flex flex-wrap justify-center gap-4 max-w-screen-xl mx-auto">
                 <app-card *ngFor="let head of heads"
                     [firstName]="head.firstName"
                     [lastName]="head.lastName"
@@ -31,22 +31,22 @@
     </div>
 </div>
 
+
 <div class="hero text-customRed"> 
-    <div class="hero-content text-center mb-8">
+    <div class="hero-content text-center mb-8 mt-16">
         <div class="max-w-full">
             <h1 class="text-xl font-bold mb-8" style="font-family: 'Integral CF'; font-weight: 400;">
                 meet the <span style="font-weight: 800;">managers</span>
             </h1>
             <div class="flex flex-wrap justify-center gap-4 max-w-screen-xl mx-auto">
                 <app-card *ngFor="let manager of managers"
-                    class="w-1/5 w-[18%]"
+                    class="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1rem)]"
                     [firstName]="manager.firstName"
                     [lastName]="manager.lastName"
                     [role]="manager.role"
                     [imageSrc]="manager.imageSrc">
                 </app-card>
-            </div>                                                     
+            </div>                                                              
         </div>
     </div>
 </div>
-

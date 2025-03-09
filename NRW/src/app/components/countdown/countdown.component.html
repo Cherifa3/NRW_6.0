@@ -1,0 +1,35 @@
+<div *ngIf="days >= -1" class="countdown">
+  <div class="countdown-time">
+    <div class="countdown-group">
+      <div class="countdown-time-unit">
+        <div [class.blink]="days == -1" class="countdown-time-value">{{ formatTwoDigits(days == -1 ? 0 : days) }}</div>
+        <div class="countdown-time-label">Days</div>
+      </div>
+      <div class="countdown-separator">&nbsp;:&nbsp;</div> <!-- Colon after days -->
+    </div>
+
+    <div class="countdown-group">
+      <div class="countdown-time-unit">
+        <div [class.blink]="days == -1" class="countdown-time-value">{{ formatTwoDigits(days == -1 ? 0 : hours) }}</div>
+        <div class="countdown-time-label">Hours</div>
+      </div>
+      <div class="countdown-separator">&nbsp;:&nbsp;</div> <!-- Colon after hours -->
+    </div>
+
+    <div class="countdown-group">
+      <div class="countdown-time-unit">
+        <div [class.blink]="days == -1" class="countdown-time-value">{{ formatTwoDigits(days == -1 ? 0 : minutes) }}</div>
+        <div class="countdown-time-label">Minutes</div>
+      </div>
+      <div class="countdown-separator">&nbsp;:&nbsp;</div> <!-- Colon after minutes -->
+    </div>
+
+    <div class="countdown-group">
+      <div class="countdown-time-unit">
+        <div [class.blink]="days == -1" class="countdown-time-value">{{ formatTwoDigits(days == -1 ? 0 : seconds) }}</div>
+        <div class="countdown-time-label">Seconds</div>
+      </div>
+      <!-- No colon after seconds -->
+    </div>
+  </div>
+</div>

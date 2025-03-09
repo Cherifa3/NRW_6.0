@@ -1,0 +1,54 @@
+<footer class="m-8 md:m-16 p-9 pl-12 pr-10 rounded-[38px] grid grid-cols-1 md:grid-cols-3 gap-8 text-customLight"
+  [ngClass]="{'bg-darkMode': isSpecifiedRoute(), 'bg-lightMode': !isSpecifiedRoute()}">
+
+  <!-- First Column: Icons and Text (No Text Under Icons) -->
+  <div class="grid grid-cols-[auto_1fr] gap-2">
+    <h3 class="col-span-2">copyrights</h3>
+    <p class="w-4 h-4">© </p>
+    <span> 2024 National Robotics Weekend <br />
+      <em>All Rights Reserved</em>
+    </span>
+    <!-- Icon and Text Row -->
+    <img [src]="'./assets/Location.png'" alt="pin"
+      class="w-4 h-4 self-start mt-1">
+    <span>676 INSAT Centre Urbain Nord BP, <br /> Tunis Cedex 108</span>
+    <!-- Icon and Text Row -->
+    <img [src]="'./assets/Phone.png'" alt="phone"
+      class="w-5 h-5 self-start mt-1">
+    <span>+216 29 790 922</span>
+    <!-- Icon and Text Row -->
+    <img [src]="'./assets/Envelope.png'" alt="envelope"
+      class="w-5 h-5 self-start mt-1">
+    <span>nrwcongress&#64;gmail.com</span>
+  </div>
+
+  <!-- Second Column: Logo and Justified Text -->
+  <div class="text-center max-w-md ">
+    <img class="pb-4" [src]="'./assets/logo-light.png'" alt="NRW Logo"
+      class="mx-auto w-16 h-15" />
+    <p class="text-justify">
+      A launchpad for enthusiasts to expand their horizons, build impactful connections, and unveil their genius in the
+      ever-evolving arena of robotics. It’s not just an event; it’s a celebration of talent and a testament to the
+      future of technology.
+    </p>
+  </div>
+
+  <!-- Third Column: Social Media Links -->
+  <div class="flex flex-col justify-center items-center gap-2">
+    contactez nous sur
+    <div class="flex gap-4">
+      <a href="https://www.facebook.com/NationalRoboticsWeekend">
+        <img [src]="'./assets/facebook.png'" alt="Facebook"
+          class="w-6 h-6 transition duration-300 hover:scale-110 " />
+      </a>
+      <a href="https://www.instagram.com/nationalroboticsweekend/">
+        <img [src]="'./assets/instagram.png'" alt="Instagram"
+          class="w-6 h-6 transition duration-300 hover:scale-110" />
+      </a>
+      <a href="https://www.linkedin.com/company/national-robotics-weekend">
+        <img [src]="'./assets/linkedin.png'" alt="LinkedIn"
+          class="w-6 h-6 transition duration-300 hover:scale-110"  />
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,22 @@
+    <!-- Page Content -->
+    <div class="hero text-customLight pt-32">
+      <div class="hero-content text-center mt-8">
+        <div class="max-w-full">
+          <h1 class="text-3xl font-bold" style="font-family: 'Integral CF'; font-weight: 400;">
+            meet our <span style="font-weight: 800;">SPEAKERS</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Speakers Grid -->
+    <div class="flex flex-wrap justify-center gap-4 max-w-screen-xl mx-auto">
+      <app-speaker
+        *ngFor="let head of heads"
+        [firstName]="head.firstName"
+        [lastName]="head.lastName"
+        [role]="head.role"
+        [imageSrc]="head.imageSrc"
+        [linkedinLink]="head.linkedinLink"> <!-- Added linkedinLink -->
+      </app-speaker>
+    </div>
