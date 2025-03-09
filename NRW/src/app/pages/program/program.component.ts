@@ -16,7 +16,7 @@ export class ProgramComponent {
     {
       id: 1,
       lineHeight: 720,
-      day: 'Friday 28<sup>th</sup> of June 2024', // Day 1
+      day: 'Friday 27<sup>th</sup> of June 2025', // Day 1
       events: [
         { time: '09:00 - 12:00', title: 'Networking Session' },
         { time: '12:00 - 14:00', title: 'Check-in' },
@@ -29,7 +29,7 @@ export class ProgramComponent {
     },
     {
       id: 2,
-      day: 'Saturday 29<sup>th</sup> of June 2024', // Day 2
+      day: 'Saturday 28<sup>th</sup> of June 2025', // Day 2
       lineHeight: 1120,
       events: [
         { time: '07:00 - 09:00', title: 'Breakfast' },
@@ -45,7 +45,7 @@ export class ProgramComponent {
     },
     {
       id: 3,
-      day: 'Sunday 30<sup>th</sup> of June 2024', // Day 3
+      day: 'Sunday 29<sup>th</sup> of June 2025', // Day 3
       lineHeight: 530,
       events: [
         { time: '07:00 - 09:00', title: 'Breakfast' },
