@@ -75,7 +75,7 @@ export class SpeakersComponent {
       role: `Deputy Head of Data Science Services<br>
       Artificial Intelligence Speaker<br>
     Artificial Intelligence Guest Lecturer<br>
-    Mentor - Entrepreneur (Data, Data and Data)<br>`,
+    Mentor - Entrepreneur <br>`,
       imageSrc: '../../assets/speakers/firas-ben-hassen.png',
       linkedinLink: 'https://www.linkedin.com/in/firas-ben-hassan-22bab3101/'
     }

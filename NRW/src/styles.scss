@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 /* Prevent horizontal overflow */
@@ -9,6 +8,8 @@ body, html {
   overflow-x: hidden; // Hide horizontal scrollbar
   width: 100%; // Ensure the body takes full width
   max-width: 100%; // Prevent content from exceeding the screen width
+  margin: 0;
+  padding: 0;
 }
 img {
   image-rendering: optimizeQuality;

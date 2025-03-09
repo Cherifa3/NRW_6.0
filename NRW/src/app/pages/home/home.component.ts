@@ -1,6 +1,9 @@
 import { Component, ViewChild, ElementRef ,OnInit} from '@angular/core';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAward  } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb  } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home', // Replace with your home component's selector
@@ -57,6 +60,9 @@ export class HomeComponent  implements OnInit {
 
   faChevronRight = faChevronRight;
   faChevronLeft= faChevronLeft;
+  faAward= faAward;
+  faLightbulb =faLightbulb;
+  faGlobe=faGlobe;
   // List of speakers
   speakers = [
     { firstName: 'JIM' , lastName: 'SCHMIEDELER', role: 'Professor at University of Notre Dame', imageSrc: '../../assets/speakers/James Schmiedeler.png' },
@@ -65,7 +71,7 @@ export class HomeComponent  implements OnInit {
     { firstName: 'CRISTINIA' , lastName: 'MONREAL', role: 'Full professor and head of the Department Intelligent Transport Systems at the Johannes Kepler University Linz, in Austria.', imageSrc: '../../assets/speakers/Dr. CristinaOlaverri.png' },
     { firstName: 'OUSSEMA' , lastName: 'KHATIB', role: ' Professor of Computer Science and the Director of the Robotics Laboratory at Stanford University', imageSrc: '../../assets/speakers/Khatib-Oussama.png' },
     { firstName: 'ANIS' , lastName: 'SAHBANI', role: 'Associate Professor at Sorbonne University - CEO & Founder of Enova Robotics S.A.', imageSrc: '../../assets/speakers/anis_sahbani.png' },
-    { firstName: 'FIRAS' , lastName: 'BEN HASSEN', role: 'Deputy Head of Data Science Services Mentor , Entrepreneur (Data, Data and Data)', imageSrc: '../../assets/speakers/firas-ben-hassen.png' },
+    { firstName: 'FIRAS' , lastName: 'BEN HASSEN', role: 'Deputy Head of Data Science Services Mentor , Entrepreneur ', imageSrc: '../../assets/speakers/firas-ben-hassen.png' },
    
   ];
 

@@ -64,3 +64,18 @@
     margin: 0 5px; // Add some spacing around the colon
     line-height: 1; // Prevent extra space around the colon
   }
+
+  
+ /* Mobile styles */
+@media (max-width: 727px) {
+
+  .countdown-time-value,  .countdown-separator { 
+    font-size: 35px; // Reduce the size of the numbers
+  }
+  .countdown-time-label {
+    font-size: 12px; }
+
+    .countdown-time {
+      display: flex;
+      gap: 2px;}
+}

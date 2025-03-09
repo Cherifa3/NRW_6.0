@@ -7,6 +7,13 @@
   flex-direction: column; /* Stacks children vertically (navbar on top, content below) */
   padding: 20px; /* Adds some padding around the content */
 }
+/* Mobile Version */
+@media (max-width: 767px) {
+  .background-container {
+    min-height: 70vh; /* Ensures the container takes the full viewport height on mobile */
+    padding: 0px; /* Adjusts padding to be smaller on mobile */
+  }
+}
 
 /* Content styling */
 .content {
@@ -95,4 +102,45 @@
 
 .top-images img {
   width: 48%;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* First row content-right */
+.row:first-child .content-right { /* Align items to the top (not centered) */
+  padding-left: 0px;
+}
+
+  .row:first-child  .image-left {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  /* First Row: Remove images in top-images */
+  .row:first-child .top-images {
+    display: none;
+  }
+
+  /* Second Row: Make the image appear above the text */
+  .row:nth-child(2) .image-right , .row:nth-child(3) .image-left {
+    order: -1; /* Move the image to the top */
+    width:80%;
+    margin-bottom: 10px;
+  }
+
+  .row:nth-child(2) .paragraph , .row:nth-child(3) .paragraph {
+    max-width: 100%; /* Increase text width */
+  }
+
+  /* Adjust text size on mobile */
+  .paragraph, .paragraph-1 {
+    font-size: 18px;
+  }
 }

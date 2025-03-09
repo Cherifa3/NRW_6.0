@@ -35,3 +35,12 @@ nav {
     background: url('../assets/HOME-BG.webp')  repeat-y bottom center/contain; /* Home Image */
     will-change: transform; 
   }
+
+
+    /* Mobile version for lightMode */
+@media (max-width: 768px) {
+  .bg-lightMode, .bg-homeMode {
+    background: url('../assets/phone-bg.webp') repeat top center; 
+    background-size: 100%;
+  }
+}
