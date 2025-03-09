@@ -30,7 +30,7 @@ jobs:
         working-directory: ./NRW
         run: |
           npm install --legacy-peer-deps
-          CI=false npx ng build --configuration production
+          CI=false npx ng build
 
       - name: 📂 Deploy in ftp server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
